@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -225,6 +225,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .tourism__text figcaption, .tourism figcaption {
   font-family: "Julius Sans One", sans-serif;
   font-size: 14.4px;
+}
+
+/* line 119, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 122, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
 }
 
 /* line 4, ../../blocks/nav/_nav.sass */
@@ -439,6 +449,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 14.4px;
 }
 
+/* line 119, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 122, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
 /* line 4, ../../blocks/welcome_message/_welcome_message.sass */
 .welcome-message {
   background-image: url("../images/header__background.jpg");
@@ -647,6 +667,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 14.4px;
 }
 
+/* line 119, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 122, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
 /*------------------------------------------------------------------
  * [Title Stylesheet]
  *
@@ -847,6 +877,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .tourism__text figcaption, .tourism figcaption {
   font-family: "Julius Sans One", sans-serif;
   font-size: 14.4px;
+}
+
+/* line 119, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 122, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
 }
 
 /* line 3, ../../blocks/quotes/_quotes.sass */
@@ -1053,6 +1093,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 14.4px;
 }
 
+/* line 119, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 122, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
 /*------------------------------------------------------------------
  * [Title Stylesheet]
  *
@@ -1084,36 +1134,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100%;
 }
 
-/* line 1, ../../sass_lib/_image.sass */
+/* line 3, ../../sass_lib/_image.sass */
 .polaroids figure img {
   width: 400px;
   margin-bottom: 30px;
   border: 10px solid white;
   border-bottom: 30px solid white;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
-
-/* line 10, ../../sass_lib/_image.sass */
+/* line 11, ../../sass_lib/_image.sass */
 .polaroids figure img, .polaroids figure figcaption {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
 
-/* line 15, ../../sass_lib/_image.sass */
+/* line 21, ../../sass_lib/_image.sass */
 .polaroids figure:nth-child(even) img, .polaroids figure:nth-child(even) figcaption {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
   transform: rotate(2deg);
 }
 
-/* line 20, ../../sass_lib/_image.sass */
-.polaroids figure img {
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-}
-
-/* line 25, ../../sass_lib/_image.sass */
+/* line 27, ../../sass_lib/_image.sass */
 .polaroids figcaption {
   position: absolute;
   left: 225px;
@@ -1309,6 +1354,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .tourism__text figcaption, .tourism figcaption {
   font-family: "Julius Sans One", sans-serif;
   font-size: 14.4px;
+}
+
+/* line 119, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 122, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
 }
 
 /* line 15, ../../blocks/footer/_footer.sass */
