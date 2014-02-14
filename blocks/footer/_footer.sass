@@ -1,0 +1,58 @@
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *-------------------------------------------------------------------*/
+@import '../../sass_lib/helpers'
+@import '../../sass_lib/typography'
+
+.footer
+  background-color: #1e1e1e
+  @extend .footer__text
+
+  > *
+    text-align: center
+
+
+
+.postal-address
+  display: inline-block
+  width: 33%
+  padding: 2% 5% 2% 15%
+
+.contact-point
+  display: inline-block
+
+  vertical-align: top
+  width: 33%
+  padding: 2%
+
+.social
+  display: inline-block
+  vertical-align: top
+  width: 33%
+  padding: 2% 15% 2% 5%
+
+.social__icon
+  width: 40px
+  height: 40px
+  vertical-align: middle
+  margin-left: 10px
+
+.copyright
+  background: url('../images/textures/granular.png')
+  border-top: 1px solid black
+
+.copyright__inner
+  @extend %center
+  padding: 1em 0
+  text-align: right
+
+
+

@@ -1,0 +1,33 @@
+@import '../../sass_lib/helpers'
+@import '../../sass_lib/typography'
+
+.welcome-message
+
+  background-image: url('../images/header__background.jpg')
+  background-repeat: no-repeat
+  @extend .welcome-message__text
+  
+  // triggers a new positioning context, used by mask
+  position: relative
+
+// mask effect for welcome message
+.welcome-message:after
+  content: ""
+  position: absolute
+  width: 50%
+  height: 100%
+  background-image: url('../images/textures/square.png')
+  background-color: rgba(198, 226, 225, 0.1)
+  top: 0
+  right: 0
+
+.welcome-message__inner
+  @extend %center
+  padding: 10% 0
+
+.welcome-message__title
+  color: #F6F5EE
+
+.welcome-message__tag-line
+  color: #F6F5EE
+  padding: 1em 4em

@@ -1,0 +1,35 @@
+// layout helpers
+
+%center
+  width: 90%
+  margin: 0 auto
+
+%left
+  margin: 10% 10% 10% 10%
+
+%right
+  margin: 10% 10% 10% 10%
+
+
+// collections
+
+%collection--align-justify
+  text-align: justify
+  font-size: 0
+
+  &:after
+    content: " "
+    width: 100%
+    display: inline-block
+
+  & %collection__item
+    display: inline-block
+    font-size: 16px
+
+%collection--align-right
+  text-align: right
+  font-size: 0
+  
+  & %collection__item
+    display: inline-block
+    font-size: 16px

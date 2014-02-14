@@ -1,0 +1,47 @@
+@import '../../sass_lib/typography'
+
+.quote
+  @extend .quote__text
+  padding: 150px 20% 0 20% 
+  position: relative
+  margin-top: 15%
+
+.quote p
+  //background: rgba(255,255,255,0.5)
+  display: inline
+  color: rgba(214,163,75,0.8)
+  text-shadow: 0 1px 1px rgba(255,255,255,0.5)
+  box-shadow: 0 -6px 0 rgba(221,221,214,0.4)
+
+.quote footer
+  text-align: right
+  padding: 5%
+
+.quote:after
+  font-family: 'icons'
+  background: rgba(30,30,30,0.8)
+  width: 130px
+  height: 130px
+  border-radius: 50%
+  content: '\275e'
+  position: absolute
+  font-size: 70px
+  line-height: 130px
+  text-align: center
+  top: 0px
+  left: 50%
+  margin-left: -75px
+  //margin-left: -65px
+  color: rgba(214,163,75,0.5)
+  text-shadow: 0 1px 1px rgba(255,255,255,0.1)
+
+//.quote:before
+//  content: ''
+//  width: 200px
+//  height: 200px
+//  border-radius: 50%
+//  border-left: 5px solid rgba(214,163,75,0.1)
+//  position: absolute
+//  top: 150px
+//  left: 0px
+//  z-index: 1

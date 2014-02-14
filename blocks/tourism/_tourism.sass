@@ -1,0 +1,25 @@
+@import '../../sass_lib/helpers'
+@import '../../sass_lib/typography'
+@import '../../sass_lib/flag'
+@import '../../sass_lib/image'
+
+.tourism
+  @extend .tourism__text
+
+.tourism__media
+  width: 50%
+  display: table-cell
+  vertical-align: top
+  background: url('../images/textures/squared_metal.png')
+
+.tourism__media__inner
+  @extend %left
+
+.tourism-message
+  width: 50%
+  display: table-cell
+  vertical-align: top
+  background: #d6a34b url('../images/tourism__background.png') bottom left no-repeat
+
+.tourism-message__inner
+  @extend %right

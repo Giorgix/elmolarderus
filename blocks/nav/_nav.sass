@@ -1,0 +1,23 @@
+@import '../../sass_lib/helpers'
+@import '../../sass_lib/typography'
+
+.nav
+  background-color: #1e1e1e
+  border-bottom: 3px solid black
+  @extend .nav__text
+
+.nav__inner
+  @extend %center
+
+.nav__list
+  @extend %collection--align-justify
+  margin-left: 180px
+
+.nav__item
+  @extend %collection__item
+  padding: 1.5em 1em
+
+
+.nav__link:hover
+  +text-shadow
+  border-bottom: 1px solid grey

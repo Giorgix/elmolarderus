@@ -1,0 +1,52 @@
+@import '../../sass_lib/helpers'
+@import '../../sass_lib/typography'
+@import '../../sass_lib/flag'
+
+
+.products
+  @extend .products__text
+
+.products-message
+  width: 50%
+  display: table-cell  
+  background: #f6f5ee url('../images/products__background.png') bottom right no-repeat
+  vertical-align: top
+
+.products-message__inner
+  @extend %left
+
+.products__list
+  width: 50%
+  display: table-cell  
+  background-image: url('../images/textures/light_background.png')
+  vertical-align: top
+
+.products__list__inner
+  @extend %right
+
+
+
+.product
+  @extend %flag
+  @extend .product__text
+  margin-bottom: 1em
+
+.product__image
+  @extend %flag__mast
+
+.product__info
+  @extend %flag__banner
+  padding-left: 1em
+
+.product__tasting-notes 
+  
+  display: inline-block
+  text-decoration: none
+  padding: 7px 14px
+  background: #1e1e1e
+  box-shadow: 0 0 1px #000
+
+.product__tasting-notes:hover
+  box-shadow: 0 0 5px #000
+
+
