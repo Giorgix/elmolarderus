@@ -1170,9 +1170,10 @@ em {
 
 /* line 28, ../../sass_lib/_image.sass */
 .polaroids figcaption {
+  width: 400px;
   position: absolute;
-  left: 10.5em;
   top: 18em;
+  text-align: center;
 }
 
 /* line 6, ../../blocks/tourism/_tourism.sass */
