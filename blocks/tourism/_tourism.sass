@@ -5,21 +5,27 @@
 
 .tourism
   @extend .tourism__text
+  font-size: 0
+  overflow: hidden
 
 .tourism__media
   width: 50%
-  display: table-cell
+  display: inline-block
   vertical-align: top
   background: url('../images/textures/squared_metal.png')
+  margin-bottom: -99999px
+  padding-bottom: 99999px
 
 .tourism__media__inner
   @extend %left
 
 .tourism-message
   width: 50%
-  display: table-cell
+  display: inline-block
   vertical-align: top
   background: #d6a34b url('../images/tourism__background.png') bottom left no-repeat
+  margin-bottom: -99999px
+  padding-bottom: 99999px
 
 .tourism-message__inner
   @extend %right

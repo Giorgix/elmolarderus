@@ -5,21 +5,27 @@
 
 .products
   @extend .products__text
+  font-size: 0
+  overflow: hidden
 
 .products-message
   width: 50%
-  display: table-cell  
+  display: inline-block  
   background: #f6f5ee url('../images/products__background.png') bottom right no-repeat
   vertical-align: top
+  margin-bottom: -99999px
+  padding-bottom: 99999px
 
 .products-message__inner
   @extend %left
 
 .products__list
   width: 50%
-  display: table-cell  
+  display: inline-block  
   background-image: url('../images/textures/light_background.png')
   vertical-align: top
+  margin-bottom: -99999px
+  padding-bottom: 99999px
 
 .products__list__inner
   @extend %right

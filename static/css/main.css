@@ -496,11 +496,7 @@ em {
 
 /* line 1, ../../blocks/content/_content.sass */
 .content {
-  display: table;
   border-top: 3px solid black;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
 }
 
 /* line 3, ../../sass_lib/_helpers.sass */
@@ -708,33 +704,43 @@ em {
   width: 100%;
 }
 
-/* line 9, ../../blocks/products/_products.sass */
+/* line 6, ../../blocks/products/_products.sass */
+.products {
+  font-size: 0;
+  overflow: hidden;
+}
+
+/* line 11, ../../blocks/products/_products.sass */
 .products-message {
   width: 50%;
-  display: table-cell;
+  display: inline-block;
   background: #f6f5ee url("../images/products__background.png") bottom right no-repeat;
   vertical-align: top;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
-/* line 18, ../../blocks/products/_products.sass */
+/* line 22, ../../blocks/products/_products.sass */
 .products__list {
   width: 50%;
-  display: table-cell;
+  display: inline-block;
   background-image: url("../images/textures/light_background.png");
   vertical-align: top;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
-/* line 29, ../../blocks/products/_products.sass */
+/* line 35, ../../blocks/products/_products.sass */
 .product {
   margin-bottom: 1em;
 }
 
-/* line 37, ../../blocks/products/_products.sass */
+/* line 43, ../../blocks/products/_products.sass */
 .product__info {
   padding-left: 1em;
 }
 
-/* line 41, ../../blocks/products/_products.sass */
+/* line 47, ../../blocks/products/_products.sass */
 .product__tasting-notes {
   display: inline-block;
   text-decoration: none;
@@ -743,7 +749,7 @@ em {
   box-shadow: 0 0 1px black;
 }
 
-/* line 49, ../../blocks/products/_products.sass */
+/* line 55, ../../blocks/products/_products.sass */
 .product__tasting-notes:hover {
   box-shadow: 0 0 5px black;
 }
@@ -1169,20 +1175,30 @@ em {
   top: 18em;
 }
 
-/* line 9, ../../blocks/tourism/_tourism.sass */
-.tourism__media {
-  width: 50%;
-  display: table-cell;
-  vertical-align: top;
-  background: url("../images/textures/squared_metal.png");
+/* line 6, ../../blocks/tourism/_tourism.sass */
+.tourism {
+  font-size: 0;
+  overflow: hidden;
 }
 
-/* line 18, ../../blocks/tourism/_tourism.sass */
+/* line 11, ../../blocks/tourism/_tourism.sass */
+.tourism__media {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  background: url("../images/textures/squared_metal.png");
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+/* line 22, ../../blocks/tourism/_tourism.sass */
 .tourism-message {
   width: 50%;
-  display: table-cell;
+  display: inline-block;
   vertical-align: top;
   background: #d6a34b url("../images/tourism__background.png") bottom left no-repeat;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
 /*------------------------------------------------------------------
