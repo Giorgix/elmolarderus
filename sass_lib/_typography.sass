@@ -14,15 +14,28 @@ $font--family-baskerville: "Libre Baskerville", sans-serif
   
   & .welcome-message__title
     font-family: $font--family-julius
-    font-size: 51.2px
     text-transform: uppercase
     +text-shadow
 
   & .welcome-message__tag-line
     font-family: $font--family-baskerville
-    font-size: 25.6px
     font-style: italic
     +text-shadow
+
++at_breakpoint(palm)
+  .welcome-message__title
+    font-size: 35px
+  .welcome-message__tag-line
+    font-size: 20px
+    line-height: 1.5
+    padding: 1em 0 0
+
++at_breakpoint(desk)
+  .welcome-message__title
+    font-size: 51.2px
+  .welcome-message__tag-line
+    font-size: 25.6px
+    padding: 1em 4em
 
 .products__text, .tourism__text
 
