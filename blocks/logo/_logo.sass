@@ -13,9 +13,17 @@
 .logo
   display: block
   position: absolute
-  left: 5%
   top: 0
   z-index: 99999
+
++at_breakpoint(palm)
+  .logo  
+    margin-left: -90px
+    left: 50%
+
++at_breakpoint(desk)
+  .logo
+    left: 5%
 
 .logo__image 
   height: 180px

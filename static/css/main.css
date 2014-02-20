@@ -69,31 +69,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0 auto;
 }
 
-/* line 7, ../../sass_lib/_helpers.sass */
+/* line 6, ../../sass_lib/_helpers.sass */
 .products-message__inner, .tourism__media__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 6, ../../sass_lib/_helpers.sass */
+  .products-message__inner, .tourism__media__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 10, ../../sass_lib/_helpers.sass */
 .products__list__inner, .tourism-message__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
 }
-
-/* line 16, ../../sass_lib/_helpers.sass */
-.nav__list {
-  text-align: justify;
-  font-size: 0;
-}
-/* line 20, ../../sass_lib/_helpers.sass */
-.nav__list:after {
-  content: " ";
-  width: 100%;
-  display: inline-block;
-}
-/* line 25, ../../sass_lib/_helpers.sass */
-.nav__list .nav__item {
-  display: inline-block;
-  font-size: 16px;
+@media only screen and (min-width: 64.063em) {
+  /* line 10, ../../sass_lib/_helpers.sass */
+  .products__list__inner, .tourism-message__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
@@ -243,17 +238,43 @@ em {
   border-bottom: 3px solid black;
 }
 
-/* line 12, ../../blocks/nav/_nav.sass */
-.nav__list {
-  margin-left: 180px;
+@media only screen and (min-width: 20em) and (max-width: 40.062em) {
+  /* line 9, ../../blocks/nav/_nav.sass */
+  .nav {
+    padding-top: 200px;
+  }
+
+  /* line 11, ../../blocks/nav/_nav.sass */
+  .nav__list {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 17, ../../blocks/nav/_nav.sass */
+  .nav__list {
+    text-align: justify;
+    font-size: 0;
+    margin-left: 180px;
+  }
+  /* line 21, ../../sass_lib/_helpers.sass */
+  .nav__list:after {
+    content: " ";
+    width: 100%;
+    display: inline-block;
+  }
+  /* line 26, ../../sass_lib/_helpers.sass */
+  .nav__list .nav__item {
+    display: inline-block;
+    font-size: 16px;
+  }
 }
 
-/* line 16, ../../blocks/nav/_nav.sass */
+/* line 22, ../../blocks/nav/_nav.sass */
 .nav__item {
   padding: 1.5em 1em;
 }
 
-/* line 21, ../../blocks/nav/_nav.sass */
+/* line 27, ../../blocks/nav/_nav.sass */
 .nav__link:hover {
   text-shadow: 0px 0px 1px #aaaaaa;
   border-bottom: 1px solid grey;
@@ -274,12 +295,24 @@ em {
 .logo {
   display: block;
   position: absolute;
-  left: 5%;
   top: 0;
   z-index: 99999;
 }
 
-/* line 20, ../../blocks/logo/_logo.sass */
+@media only screen and (min-width: 20em) and (max-width: 40.062em) {
+  /* line 20, ../../blocks/logo/_logo.sass */
+  .logo {
+    margin-left: -90px;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 25, ../../blocks/logo/_logo.sass */
+  .logo {
+    left: 5%;
+  }
+}
+/* line 28, ../../blocks/logo/_logo.sass */
 .logo__image {
   height: 180px;
   width: 180px;
@@ -291,31 +324,26 @@ em {
   margin: 0 auto;
 }
 
-/* line 7, ../../sass_lib/_helpers.sass */
+/* line 6, ../../sass_lib/_helpers.sass */
 .products-message__inner, .tourism__media__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 6, ../../sass_lib/_helpers.sass */
+  .products-message__inner, .tourism__media__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 10, ../../sass_lib/_helpers.sass */
 .products__list__inner, .tourism-message__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
 }
-
-/* line 16, ../../sass_lib/_helpers.sass */
-.nav__list {
-  text-align: justify;
-  font-size: 0;
-}
-/* line 20, ../../sass_lib/_helpers.sass */
-.nav__list:after {
-  content: " ";
-  width: 100%;
-  display: inline-block;
-}
-/* line 25, ../../sass_lib/_helpers.sass */
-.nav__list .nav__item {
-  display: inline-block;
-  font-size: 16px;
+@media only screen and (min-width: 64.063em) {
+  /* line 10, ../../sass_lib/_helpers.sass */
+  .products__list__inner, .tourism-message__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
@@ -505,31 +533,26 @@ em {
   margin: 0 auto;
 }
 
-/* line 7, ../../sass_lib/_helpers.sass */
+/* line 6, ../../sass_lib/_helpers.sass */
 .products-message__inner, .tourism__media__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 6, ../../sass_lib/_helpers.sass */
+  .products-message__inner, .tourism__media__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 10, ../../sass_lib/_helpers.sass */
 .products__list__inner, .tourism-message__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
 }
-
-/* line 16, ../../sass_lib/_helpers.sass */
-.nav__list {
-  text-align: justify;
-  font-size: 0;
-}
-/* line 20, ../../sass_lib/_helpers.sass */
-.nav__list:after {
-  content: " ";
-  width: 100%;
-  display: inline-block;
-}
-/* line 25, ../../sass_lib/_helpers.sass */
-.nav__list .nav__item {
-  display: inline-block;
-  font-size: 16px;
+@media only screen and (min-width: 64.063em) {
+  /* line 10, ../../sass_lib/_helpers.sass */
+  .products__list__inner, .tourism-message__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
@@ -712,35 +735,38 @@ em {
 
 /* line 11, ../../blocks/products/_products.sass */
 .products-message {
-  width: 50%;
-  display: inline-block;
   background: #f6f5ee url("../images/products__background.png") bottom right no-repeat;
   vertical-align: top;
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }
 
-/* line 22, ../../blocks/products/_products.sass */
+/* line 20, ../../blocks/products/_products.sass */
 .products__list {
-  width: 50%;
-  display: inline-block;
   background-image: url("../images/textures/light_background.png");
   vertical-align: top;
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }
 
-/* line 35, ../../blocks/products/_products.sass */
+@media only screen and (min-width: 64.063em) {
+  /* line 30, ../../blocks/products/_products.sass */
+  .products-message, .products__list {
+    width: 50%;
+    display: inline-block;
+  }
+}
+/* line 34, ../../blocks/products/_products.sass */
 .product {
   margin-bottom: 1em;
 }
 
-/* line 43, ../../blocks/products/_products.sass */
+/* line 42, ../../blocks/products/_products.sass */
 .product__info {
   padding-left: 1em;
 }
 
-/* line 47, ../../blocks/products/_products.sass */
+/* line 46, ../../blocks/products/_products.sass */
 .product__tasting-notes {
   display: inline-block;
   text-decoration: none;
@@ -749,7 +775,7 @@ em {
   box-shadow: 0 0 1px black;
 }
 
-/* line 55, ../../blocks/products/_products.sass */
+/* line 54, ../../blocks/products/_products.sass */
 .product__tasting-notes:hover {
   box-shadow: 0 0 5px black;
 }
@@ -941,31 +967,26 @@ em {
   margin: 0 auto;
 }
 
-/* line 7, ../../sass_lib/_helpers.sass */
+/* line 6, ../../sass_lib/_helpers.sass */
 .products-message__inner, .tourism__media__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 6, ../../sass_lib/_helpers.sass */
+  .products-message__inner, .tourism__media__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 10, ../../sass_lib/_helpers.sass */
 .products__list__inner, .tourism-message__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
 }
-
-/* line 16, ../../sass_lib/_helpers.sass */
-.nav__list {
-  text-align: justify;
-  font-size: 0;
-}
-/* line 20, ../../sass_lib/_helpers.sass */
-.nav__list:after {
-  content: " ";
-  width: 100%;
-  display: inline-block;
-}
-/* line 25, ../../sass_lib/_helpers.sass */
-.nav__list .nav__item {
-  display: inline-block;
-  font-size: 16px;
+@media only screen and (min-width: 64.063em) {
+  /* line 10, ../../sass_lib/_helpers.sass */
+  .products__list__inner, .tourism-message__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
@@ -1184,24 +1205,35 @@ em {
 
 /* line 11, ../../blocks/tourism/_tourism.sass */
 .tourism__media {
-  width: 50%;
-  display: inline-block;
   vertical-align: top;
   background: url("../images/textures/squared_metal.png");
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
 }
 
-/* line 22, ../../blocks/tourism/_tourism.sass */
+/* line 18, ../../blocks/tourism/_tourism.sass */
 .tourism-message {
-  width: 50%;
-  display: inline-block;
   vertical-align: top;
   background: #d6a34b url("../images/tourism__background.png") bottom left no-repeat;
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
 }
 
+@media only screen and (min-width: 64.063em) {
+  /* line 26, ../../blocks/tourism/_tourism.sass */
+  .tourism__media, .tourism-message {
+    width: 50%;
+    display: inline-block;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+  }
+
+  /* line 31, ../../blocks/tourism/_tourism.sass */
+  .tourism__media {
+    margin-left: -100%;
+  }
+
+  /* line 33, ../../blocks/tourism/_tourism.sass */
+  .tourism-message {
+    margin-left: 50%;
+  }
+}
 /*------------------------------------------------------------------
  * [Title Stylesheet]
  *
@@ -1219,31 +1251,26 @@ em {
   margin: 0 auto;
 }
 
-/* line 7, ../../sass_lib/_helpers.sass */
+/* line 6, ../../sass_lib/_helpers.sass */
 .products-message__inner, .tourism__media__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 6, ../../sass_lib/_helpers.sass */
+  .products-message__inner, .tourism__media__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 10, ../../sass_lib/_helpers.sass */
 .products__list__inner, .tourism-message__inner {
-  margin: 10% 10% 10% 10%;
+  margin: 0 5% 0 5%;
 }
-
-/* line 16, ../../sass_lib/_helpers.sass */
-.nav__list {
-  text-align: justify;
-  font-size: 0;
-}
-/* line 20, ../../sass_lib/_helpers.sass */
-.nav__list:after {
-  content: " ";
-  width: 100%;
-  display: inline-block;
-}
-/* line 25, ../../sass_lib/_helpers.sass */
-.nav__list .nav__item {
-  display: inline-block;
-  font-size: 16px;
+@media only screen and (min-width: 64.063em) {
+  /* line 10, ../../sass_lib/_helpers.sass */
+  .products__list__inner, .tourism-message__inner {
+    margin: 10% 10% 10% 10%;
+  }
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
@@ -1439,14 +1466,14 @@ em {
   text-align: right;
 }
 
-/* line 15, ../../blocks/main.sass */
+/* line 16, ../../blocks/main.sass */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 18, ../../blocks/main.sass */
+/* line 19, ../../blocks/main.sass */
 a {
   text-decoration: none;
 }

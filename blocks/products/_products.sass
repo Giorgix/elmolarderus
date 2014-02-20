@@ -9,8 +9,6 @@
   overflow: hidden
 
 .products-message
-  width: 50%
-  display: inline-block  
   background: #f6f5ee url('../images/products__background.png') bottom right no-repeat
   vertical-align: top
   margin-bottom: -99999px
@@ -19,9 +17,7 @@
 .products-message__inner
   @extend %left
 
-.products__list
-  width: 50%
-  display: inline-block  
+.products__list  
   background-image: url('../images/textures/light_background.png')
   vertical-align: top
   margin-bottom: -99999px
@@ -30,7 +26,10 @@
 .products__list__inner
   @extend %right
 
-
++at_breakpoint(desk)
+  .products-message, .products__list
+    width: 50%
+    display: inline-block
 
 .product
   @extend %flag

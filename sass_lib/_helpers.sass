@@ -3,17 +3,18 @@
 %center
   width: 90%
   margin: 0 auto
-
 %left
-  margin: 10% 10% 10% 10%
-
+  margin: 0 5% 0 5%
+  +at_breakpoint(desk)
+    margin: 10% 10% 10% 10%
 %right
-  margin: 10% 10% 10% 10%
+  margin: 0 5% 0 5%
+  +at_breakpoint(desk)
+    margin: 10% 10% 10% 10%
 
 
 // collections
-
-%collection--align-justify
+@mixin collection--align-justify
   text-align: justify
   font-size: 0
 
@@ -25,6 +26,9 @@
   & %collection__item
     display: inline-block
     font-size: 16px
+    
+%collection--align-justify
+  +collection--align-justify
 
 %collection--align-right
   text-align: right

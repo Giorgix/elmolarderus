@@ -1,10 +1,32 @@
+// smartphones, iPhone, portrait 480x320 phones 
+//@media (min-width:20em) 
+
+// portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+//@media (min-width:30.063em)
+
+// portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+//@media (min-width:40.063em) 
+
+// tablet, landscape iPad, lo-res laptops ands desktops 
+//@media (min-width:60.063em) 
+
+// big landscape tablets, laptops, and desktops
+//@media (min-width:64.063em) 
+
+// hi-res laptops and desktops
+//@media (min-width:80.063em)
+
 $breakpoint_small: 800px
 $breakpoint_large: 600px
 
 =at_breakpoint($breakpoint)
   @if $breakpoint == 'palm'
-    @media only screen and (max-width: 599px)
+    @media only screen and (min-width: 20em) and (max-width: 40.062em)
+      @content
+  @if $breakpoint == 'tab'
+    @media only screen and (min-width: 40.063em) and (max-width: 64.062em)
       @content
   @if $breakpoint == 'desk'
-    @media only screen and (min-width: $breakpoint_large)
-      @content
+    @media only screen and (min-width: 64.063em)
+      @content 
+     

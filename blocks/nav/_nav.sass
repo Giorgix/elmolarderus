@@ -5,13 +5,19 @@
   background-color: #1e1e1e
   border-bottom: 3px solid black
   @extend .nav__text
++at_breakpoint(palm)
+  .nav
+    padding-top: 200px
+  .nav__list
+    text-align: center
 
 .nav__inner
   @extend %center
 
 .nav__list
-  @extend %collection--align-justify
-  margin-left: 180px
+  +at_breakpoint(desk)
+    +collection--align-justify
+    margin-left: 180px
 
 .nav__item
   @extend %collection__item
