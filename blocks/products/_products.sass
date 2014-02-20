@@ -11,8 +11,6 @@
 .products-message
   background: #f6f5ee url('../images/products__background.png') bottom right no-repeat
   vertical-align: top
-  margin-bottom: -99999px
-  padding-bottom: 99999px
 
 .products-message__inner
   @extend %left
@@ -20,16 +18,20 @@
 .products__list  
   background-image: url('../images/textures/light_background.png')
   vertical-align: top
-  margin-bottom: -99999px
-  padding-bottom: 99999px
 
 .products__list__inner
   @extend %right
+
++at_breakpoint(palm)
+  .products-message, .products__list
+    padding: 10% 0
 
 +at_breakpoint(desk)
   .products-message, .products__list
     width: 50%
     display: inline-block
+    margin-bottom: -99999px  //the background disapear cause the same height colums fix
+    padding-bottom: 99999px
 
 .product
   @extend %flag

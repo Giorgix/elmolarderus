@@ -737,36 +737,40 @@ em {
 .products-message {
   background: #f6f5ee url("../images/products__background.png") bottom right no-repeat;
   vertical-align: top;
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
 }
 
-/* line 20, ../../blocks/products/_products.sass */
+/* line 18, ../../blocks/products/_products.sass */
 .products__list {
   background-image: url("../images/textures/light_background.png");
   vertical-align: top;
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
 }
 
+@media only screen and (min-width: 20em) and (max-width: 40.062em) {
+  /* line 26, ../../blocks/products/_products.sass */
+  .products-message, .products__list {
+    padding: 10% 0;
+  }
+}
 @media only screen and (min-width: 64.063em) {
   /* line 30, ../../blocks/products/_products.sass */
   .products-message, .products__list {
     width: 50%;
     display: inline-block;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
   }
 }
-/* line 34, ../../blocks/products/_products.sass */
+/* line 36, ../../blocks/products/_products.sass */
 .product {
   margin-bottom: 1em;
 }
 
-/* line 42, ../../blocks/products/_products.sass */
+/* line 44, ../../blocks/products/_products.sass */
 .product__info {
   padding-left: 1em;
 }
 
-/* line 46, ../../blocks/products/_products.sass */
+/* line 48, ../../blocks/products/_products.sass */
 .product__tasting-notes {
   display: inline-block;
   text-decoration: none;
@@ -775,7 +779,7 @@ em {
   box-shadow: 0 0 1px black;
 }
 
-/* line 54, ../../blocks/products/_products.sass */
+/* line 56, ../../blocks/products/_products.sass */
 .product__tasting-notes:hover {
   box-shadow: 0 0 5px black;
 }
@@ -1215,8 +1219,14 @@ em {
   background: #d6a34b url("../images/tourism__background.png") bottom left no-repeat;
 }
 
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 20em) and (max-width: 40.062em) {
   /* line 26, ../../blocks/tourism/_tourism.sass */
+  .tourism__media, .tourism-message {
+    padding: 10% 0;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 30, ../../blocks/tourism/_tourism.sass */
   .tourism__media, .tourism-message {
     width: 50%;
     display: inline-block;
@@ -1224,12 +1234,12 @@ em {
     padding-bottom: 99999px;
   }
 
-  /* line 31, ../../blocks/tourism/_tourism.sass */
+  /* line 35, ../../blocks/tourism/_tourism.sass */
   .tourism__media {
     margin-left: -100%;
   }
 
-  /* line 33, ../../blocks/tourism/_tourism.sass */
+  /* line 37, ../../blocks/tourism/_tourism.sass */
   .tourism-message {
     margin-left: 50%;
   }
