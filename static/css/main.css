@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .welcome-message__inner, .copyright__inner {
+.nav__inner, .copyright__inner {
   width: 90%;
   margin: 0 auto;
 }
@@ -92,55 +92,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 7, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
+/* line 10, ../../sass_lib/_typography.sass */
 .nav__text, .nav {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
   text-transform: uppercase;
 }
-/* line 9, ../../sass_lib/_typography.sass */
+/* line 15, ../../sass_lib/_typography.sass */
 .nav__text .nav__link, .nav .nav__link {
   color: #edeadc;
 }
 
-/* line 15, ../../sass_lib/_typography.sass */
+/* line 21, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
   font-family: "Julius Sans One", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 20, ../../sass_lib/_typography.sass */
+/* line 26, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Libre Baskerville", sans-serif;
-  font-style: italic;
-  text-shadow: 0px 0px 1px #aaaaaa;
+  font-family: "Julius Sans One", sans-serif;
+}
+/* line 30, ../../sass_lib/_typography.sass */
+.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
+  color: #d6a34b;
 }
 
 @media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 26, ../../sass_lib/_typography.sass */
+  /* line 34, ../../sass_lib/_typography.sass */
   .welcome-message__title {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
   }
 
-  /* line 28, ../../sass_lib/_typography.sass */
+  /* line 37, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
-    padding: 1em 0 0;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 34, ../../sass_lib/_typography.sass */
+  /* line 44, ../../sass_lib/_typography.sass */
   .welcome-message__title {
     font-size: 51.2px;
   }
 
-  /* line 36, ../../sass_lib/_typography.sass */
+  /* line 46, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
     font-size: 25.6px;
-    padding: 1em 4em;
   }
 }
-/* line 42, ../../sass_lib/_typography.sass */
+/* line 52, ../../sass_lib/_typography.sass */
 .products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 28.8px;
@@ -149,7 +160,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 0px 0px 1px #aaaaaa;
   margin-bottom: 1em;
 }
-/* line 50, ../../sass_lib/_typography.sass */
+/* line 60, ../../sass_lib/_typography.sass */
 .products__text p, .products p, .tourism__text p, .tourism p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -158,7 +169,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #75738b;
 }
 
-/* line 59, ../../sass_lib/_typography.sass */
+/* line 69, ../../sass_lib/_typography.sass */
 .product__text .product__name, .product .product__name {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
@@ -166,7 +177,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #2a2827;
   text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 66, ../../sass_lib/_typography.sass */
+/* line 76, ../../sass_lib/_typography.sass */
 .product__text .product__ingredients, .product .product__ingredients {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -175,14 +186,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-indent: 1em;
   color: #7f7d6f;
 }
-/* line 74, ../../sass_lib/_typography.sass */
+/* line 84, ../../sass_lib/_typography.sass */
 .product__text .product__type, .product .product__type {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 3.5em;
   color: #75738b;
 }
-/* line 80, ../../sass_lib/_typography.sass */
+/* line 90, ../../sass_lib/_typography.sass */
 .product__text .product__tasting-notes, .product .product__tasting-notes {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -190,14 +201,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #edeadc;
 }
 
-/* line 86, ../../sass_lib/_typography.sass */
+/* line 96, ../../sass_lib/_typography.sass */
 .footer__text, .footer {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 1.5em;
   color: #6d6e71;
 }
-/* line 92, ../../sass_lib/_typography.sass */
+/* line 102, ../../sass_lib/_typography.sass */
 .footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 16px;
@@ -205,24 +216,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 4em;
   color: #dceadc;
 }
-/* line 99, ../../sass_lib/_typography.sass */
+/* line 109, ../../sass_lib/_typography.sass */
 .footer__text .copyright, .footer .copyright {
   font-size: 12px;
   color: #dceadc;
 }
-/* line 103, ../../sass_lib/_typography.sass */
+/* line 113, ../../sass_lib/_typography.sass */
 .footer__text .social a, .footer .social a {
   color: #6d6e71;
 }
 
-/* line 108, ../../sass_lib/_typography.sass */
+/* line 118, ../../sass_lib/_typography.sass */
 .quote__text p, .quote p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 28px;
   font-style: italic;
   line-height: 46px;
 }
-/* line 114, ../../sass_lib/_typography.sass */
+/* line 124, ../../sass_lib/_typography.sass */
 .quote__text .author, .quote .author {
   font-size: 18px;
   font-weight: bold;
@@ -231,28 +242,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 0px 0px 1px #aaaaaa;
 }
 
-/* line 123, ../../sass_lib/_typography.sass */
+/* line 133, ../../sass_lib/_typography.sass */
 .tourism__text .tourism__title, .tourism .tourism__title {
   color: #2a2827;
 }
-/* line 125, ../../sass_lib/_typography.sass */
+/* line 135, ../../sass_lib/_typography.sass */
 .tourism__text .tourism-message p, .tourism .tourism-message p {
   color: #f6f5ee;
 }
-/* line 128, ../../sass_lib/_typography.sass */
+/* line 138, ../../sass_lib/_typography.sass */
 .tourism__text figcaption, .tourism figcaption {
   font-family: "Julius Sans One", sans-serif;
   font-size: 14.4px;
-}
-
-/* line 132, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 135, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
 }
 
 /* line 4, ../../blocks/nav/_nav.sass */
@@ -343,7 +344,7 @@ em {
 }
 
 /* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .welcome-message__inner, .copyright__inner {
+.nav__inner, .copyright__inner {
   width: 90%;
   margin: 0 auto;
 }
@@ -371,55 +372,66 @@ em {
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 7, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
+/* line 10, ../../sass_lib/_typography.sass */
 .nav__text, .nav {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
   text-transform: uppercase;
 }
-/* line 9, ../../sass_lib/_typography.sass */
+/* line 15, ../../sass_lib/_typography.sass */
 .nav__text .nav__link, .nav .nav__link {
   color: #edeadc;
 }
 
-/* line 15, ../../sass_lib/_typography.sass */
+/* line 21, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
   font-family: "Julius Sans One", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 20, ../../sass_lib/_typography.sass */
+/* line 26, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Libre Baskerville", sans-serif;
-  font-style: italic;
-  text-shadow: 0px 0px 1px #aaaaaa;
+  font-family: "Julius Sans One", sans-serif;
+}
+/* line 30, ../../sass_lib/_typography.sass */
+.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
+  color: #d6a34b;
 }
 
 @media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 26, ../../sass_lib/_typography.sass */
+  /* line 34, ../../sass_lib/_typography.sass */
   .welcome-message__title {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
   }
 
-  /* line 28, ../../sass_lib/_typography.sass */
+  /* line 37, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
-    padding: 1em 0 0;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 34, ../../sass_lib/_typography.sass */
+  /* line 44, ../../sass_lib/_typography.sass */
   .welcome-message__title {
     font-size: 51.2px;
   }
 
-  /* line 36, ../../sass_lib/_typography.sass */
+  /* line 46, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
     font-size: 25.6px;
-    padding: 1em 4em;
   }
 }
-/* line 42, ../../sass_lib/_typography.sass */
+/* line 52, ../../sass_lib/_typography.sass */
 .products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 28.8px;
@@ -428,7 +440,7 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
   margin-bottom: 1em;
 }
-/* line 50, ../../sass_lib/_typography.sass */
+/* line 60, ../../sass_lib/_typography.sass */
 .products__text p, .products p, .tourism__text p, .tourism p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -437,7 +449,7 @@ em {
   color: #75738b;
 }
 
-/* line 59, ../../sass_lib/_typography.sass */
+/* line 69, ../../sass_lib/_typography.sass */
 .product__text .product__name, .product .product__name {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
@@ -445,7 +457,7 @@ em {
   color: #2a2827;
   text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 66, ../../sass_lib/_typography.sass */
+/* line 76, ../../sass_lib/_typography.sass */
 .product__text .product__ingredients, .product .product__ingredients {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -454,14 +466,14 @@ em {
   text-indent: 1em;
   color: #7f7d6f;
 }
-/* line 74, ../../sass_lib/_typography.sass */
+/* line 84, ../../sass_lib/_typography.sass */
 .product__text .product__type, .product .product__type {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 3.5em;
   color: #75738b;
 }
-/* line 80, ../../sass_lib/_typography.sass */
+/* line 90, ../../sass_lib/_typography.sass */
 .product__text .product__tasting-notes, .product .product__tasting-notes {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -469,14 +481,14 @@ em {
   color: #edeadc;
 }
 
-/* line 86, ../../sass_lib/_typography.sass */
+/* line 96, ../../sass_lib/_typography.sass */
 .footer__text, .footer {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 1.5em;
   color: #6d6e71;
 }
-/* line 92, ../../sass_lib/_typography.sass */
+/* line 102, ../../sass_lib/_typography.sass */
 .footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 16px;
@@ -484,24 +496,24 @@ em {
   line-height: 4em;
   color: #dceadc;
 }
-/* line 99, ../../sass_lib/_typography.sass */
+/* line 109, ../../sass_lib/_typography.sass */
 .footer__text .copyright, .footer .copyright {
   font-size: 12px;
   color: #dceadc;
 }
-/* line 103, ../../sass_lib/_typography.sass */
+/* line 113, ../../sass_lib/_typography.sass */
 .footer__text .social a, .footer .social a {
   color: #6d6e71;
 }
 
-/* line 108, ../../sass_lib/_typography.sass */
+/* line 118, ../../sass_lib/_typography.sass */
 .quote__text p, .quote p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 28px;
   font-style: italic;
   line-height: 46px;
 }
-/* line 114, ../../sass_lib/_typography.sass */
+/* line 124, ../../sass_lib/_typography.sass */
 .quote__text .author, .quote .author {
   font-size: 18px;
   font-weight: bold;
@@ -510,28 +522,18 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
 }
 
-/* line 123, ../../sass_lib/_typography.sass */
+/* line 133, ../../sass_lib/_typography.sass */
 .tourism__text .tourism__title, .tourism .tourism__title {
   color: #2a2827;
 }
-/* line 125, ../../sass_lib/_typography.sass */
+/* line 135, ../../sass_lib/_typography.sass */
 .tourism__text .tourism-message p, .tourism .tourism-message p {
   color: #f6f5ee;
 }
-/* line 128, ../../sass_lib/_typography.sass */
+/* line 138, ../../sass_lib/_typography.sass */
 .tourism__text figcaption, .tourism figcaption {
   font-family: "Julius Sans One", sans-serif;
   font-size: 14.4px;
-}
-
-/* line 132, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 135, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
 }
 
 /* line 4, ../../blocks/welcome_message/_welcome_message.sass */
@@ -553,25 +555,29 @@ em {
   position: absolute;
   width: 50%;
   height: 100%;
-  background-image: url("../images/textures/square.png");
-  background-color: rgba(198, 226, 225, 0.1);
   top: 0;
   right: 0;
 }
 
 /* line 26, ../../blocks/welcome_message/_welcome_message.sass */
 .welcome-message__inner {
-  padding: 10% 0;
+  padding: 8% 0;
 }
 
 /* line 30, ../../blocks/welcome_message/_welcome_message.sass */
 .welcome-message__title {
+  padding: 2% 5% 2% 5%;
+  margin-right: 5%;
   color: #f6f5ee;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 33, ../../blocks/welcome_message/_welcome_message.sass */
+/* line 36, ../../blocks/welcome_message/_welcome_message.sass */
 .welcome-message__tag-line {
+  background-color: rgba(0, 0, 0, 0.9);
   color: #f6f5ee;
+  padding: 2% 5% 2% 5%;
+  margin-right: 5%;
 }
 
 /* line 1, ../../blocks/content/_content.sass */
@@ -580,7 +586,7 @@ em {
 }
 
 /* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .welcome-message__inner, .copyright__inner {
+.nav__inner, .copyright__inner {
   width: 90%;
   margin: 0 auto;
 }
@@ -608,55 +614,66 @@ em {
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 7, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
+/* line 10, ../../sass_lib/_typography.sass */
 .nav__text, .nav {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
   text-transform: uppercase;
 }
-/* line 9, ../../sass_lib/_typography.sass */
+/* line 15, ../../sass_lib/_typography.sass */
 .nav__text .nav__link, .nav .nav__link {
   color: #edeadc;
 }
 
-/* line 15, ../../sass_lib/_typography.sass */
+/* line 21, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
   font-family: "Julius Sans One", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 20, ../../sass_lib/_typography.sass */
+/* line 26, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Libre Baskerville", sans-serif;
-  font-style: italic;
-  text-shadow: 0px 0px 1px #aaaaaa;
+  font-family: "Julius Sans One", sans-serif;
+}
+/* line 30, ../../sass_lib/_typography.sass */
+.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
+  color: #d6a34b;
 }
 
 @media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 26, ../../sass_lib/_typography.sass */
+  /* line 34, ../../sass_lib/_typography.sass */
   .welcome-message__title {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
   }
 
-  /* line 28, ../../sass_lib/_typography.sass */
+  /* line 37, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
-    padding: 1em 0 0;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 34, ../../sass_lib/_typography.sass */
+  /* line 44, ../../sass_lib/_typography.sass */
   .welcome-message__title {
     font-size: 51.2px;
   }
 
-  /* line 36, ../../sass_lib/_typography.sass */
+  /* line 46, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
     font-size: 25.6px;
-    padding: 1em 4em;
   }
 }
-/* line 42, ../../sass_lib/_typography.sass */
+/* line 52, ../../sass_lib/_typography.sass */
 .products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 28.8px;
@@ -665,7 +682,7 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
   margin-bottom: 1em;
 }
-/* line 50, ../../sass_lib/_typography.sass */
+/* line 60, ../../sass_lib/_typography.sass */
 .products__text p, .products p, .tourism__text p, .tourism p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -674,7 +691,7 @@ em {
   color: #75738b;
 }
 
-/* line 59, ../../sass_lib/_typography.sass */
+/* line 69, ../../sass_lib/_typography.sass */
 .product__text .product__name, .product .product__name {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
@@ -682,7 +699,7 @@ em {
   color: #2a2827;
   text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 66, ../../sass_lib/_typography.sass */
+/* line 76, ../../sass_lib/_typography.sass */
 .product__text .product__ingredients, .product .product__ingredients {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -691,14 +708,14 @@ em {
   text-indent: 1em;
   color: #7f7d6f;
 }
-/* line 74, ../../sass_lib/_typography.sass */
+/* line 84, ../../sass_lib/_typography.sass */
 .product__text .product__type, .product .product__type {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 3.5em;
   color: #75738b;
 }
-/* line 80, ../../sass_lib/_typography.sass */
+/* line 90, ../../sass_lib/_typography.sass */
 .product__text .product__tasting-notes, .product .product__tasting-notes {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -706,14 +723,14 @@ em {
   color: #edeadc;
 }
 
-/* line 86, ../../sass_lib/_typography.sass */
+/* line 96, ../../sass_lib/_typography.sass */
 .footer__text, .footer {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 1.5em;
   color: #6d6e71;
 }
-/* line 92, ../../sass_lib/_typography.sass */
+/* line 102, ../../sass_lib/_typography.sass */
 .footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 16px;
@@ -721,24 +738,24 @@ em {
   line-height: 4em;
   color: #dceadc;
 }
-/* line 99, ../../sass_lib/_typography.sass */
+/* line 109, ../../sass_lib/_typography.sass */
 .footer__text .copyright, .footer .copyright {
   font-size: 12px;
   color: #dceadc;
 }
-/* line 103, ../../sass_lib/_typography.sass */
+/* line 113, ../../sass_lib/_typography.sass */
 .footer__text .social a, .footer .social a {
   color: #6d6e71;
 }
 
-/* line 108, ../../sass_lib/_typography.sass */
+/* line 118, ../../sass_lib/_typography.sass */
 .quote__text p, .quote p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 28px;
   font-style: italic;
   line-height: 46px;
 }
-/* line 114, ../../sass_lib/_typography.sass */
+/* line 124, ../../sass_lib/_typography.sass */
 .quote__text .author, .quote .author {
   font-size: 18px;
   font-weight: bold;
@@ -747,28 +764,18 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
 }
 
-/* line 123, ../../sass_lib/_typography.sass */
+/* line 133, ../../sass_lib/_typography.sass */
 .tourism__text .tourism__title, .tourism .tourism__title {
   color: #2a2827;
 }
-/* line 125, ../../sass_lib/_typography.sass */
+/* line 135, ../../sass_lib/_typography.sass */
 .tourism__text .tourism-message p, .tourism .tourism-message p {
   color: #f6f5ee;
 }
-/* line 128, ../../sass_lib/_typography.sass */
+/* line 138, ../../sass_lib/_typography.sass */
 .tourism__text figcaption, .tourism figcaption {
   font-family: "Julius Sans One", sans-serif;
   font-size: 14.4px;
-}
-
-/* line 132, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 135, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
 }
 
 /*------------------------------------------------------------------
@@ -860,55 +867,66 @@ em {
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 7, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
+/* line 10, ../../sass_lib/_typography.sass */
 .nav__text, .nav {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
   text-transform: uppercase;
 }
-/* line 9, ../../sass_lib/_typography.sass */
+/* line 15, ../../sass_lib/_typography.sass */
 .nav__text .nav__link, .nav .nav__link {
   color: #edeadc;
 }
 
-/* line 15, ../../sass_lib/_typography.sass */
+/* line 21, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
   font-family: "Julius Sans One", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 20, ../../sass_lib/_typography.sass */
+/* line 26, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Libre Baskerville", sans-serif;
-  font-style: italic;
-  text-shadow: 0px 0px 1px #aaaaaa;
+  font-family: "Julius Sans One", sans-serif;
+}
+/* line 30, ../../sass_lib/_typography.sass */
+.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
+  color: #d6a34b;
 }
 
 @media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 26, ../../sass_lib/_typography.sass */
+  /* line 34, ../../sass_lib/_typography.sass */
   .welcome-message__title {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
   }
 
-  /* line 28, ../../sass_lib/_typography.sass */
+  /* line 37, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
-    padding: 1em 0 0;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 34, ../../sass_lib/_typography.sass */
+  /* line 44, ../../sass_lib/_typography.sass */
   .welcome-message__title {
     font-size: 51.2px;
   }
 
-  /* line 36, ../../sass_lib/_typography.sass */
+  /* line 46, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
     font-size: 25.6px;
-    padding: 1em 4em;
   }
 }
-/* line 42, ../../sass_lib/_typography.sass */
+/* line 52, ../../sass_lib/_typography.sass */
 .products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 28.8px;
@@ -917,7 +935,7 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
   margin-bottom: 1em;
 }
-/* line 50, ../../sass_lib/_typography.sass */
+/* line 60, ../../sass_lib/_typography.sass */
 .products__text p, .products p, .tourism__text p, .tourism p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -926,7 +944,7 @@ em {
   color: #75738b;
 }
 
-/* line 59, ../../sass_lib/_typography.sass */
+/* line 69, ../../sass_lib/_typography.sass */
 .product__text .product__name, .product .product__name {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
@@ -934,7 +952,7 @@ em {
   color: #2a2827;
   text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 66, ../../sass_lib/_typography.sass */
+/* line 76, ../../sass_lib/_typography.sass */
 .product__text .product__ingredients, .product .product__ingredients {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -943,14 +961,14 @@ em {
   text-indent: 1em;
   color: #7f7d6f;
 }
-/* line 74, ../../sass_lib/_typography.sass */
+/* line 84, ../../sass_lib/_typography.sass */
 .product__text .product__type, .product .product__type {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 3.5em;
   color: #75738b;
 }
-/* line 80, ../../sass_lib/_typography.sass */
+/* line 90, ../../sass_lib/_typography.sass */
 .product__text .product__tasting-notes, .product .product__tasting-notes {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -958,14 +976,14 @@ em {
   color: #edeadc;
 }
 
-/* line 86, ../../sass_lib/_typography.sass */
+/* line 96, ../../sass_lib/_typography.sass */
 .footer__text, .footer {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 1.5em;
   color: #6d6e71;
 }
-/* line 92, ../../sass_lib/_typography.sass */
+/* line 102, ../../sass_lib/_typography.sass */
 .footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 16px;
@@ -973,24 +991,24 @@ em {
   line-height: 4em;
   color: #dceadc;
 }
-/* line 99, ../../sass_lib/_typography.sass */
+/* line 109, ../../sass_lib/_typography.sass */
 .footer__text .copyright, .footer .copyright {
   font-size: 12px;
   color: #dceadc;
 }
-/* line 103, ../../sass_lib/_typography.sass */
+/* line 113, ../../sass_lib/_typography.sass */
 .footer__text .social a, .footer .social a {
   color: #6d6e71;
 }
 
-/* line 108, ../../sass_lib/_typography.sass */
+/* line 118, ../../sass_lib/_typography.sass */
 .quote__text p, .quote p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 28px;
   font-style: italic;
   line-height: 46px;
 }
-/* line 114, ../../sass_lib/_typography.sass */
+/* line 124, ../../sass_lib/_typography.sass */
 .quote__text .author, .quote .author {
   font-size: 18px;
   font-weight: bold;
@@ -999,28 +1017,18 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
 }
 
-/* line 123, ../../sass_lib/_typography.sass */
+/* line 133, ../../sass_lib/_typography.sass */
 .tourism__text .tourism__title, .tourism .tourism__title {
   color: #2a2827;
 }
-/* line 125, ../../sass_lib/_typography.sass */
+/* line 135, ../../sass_lib/_typography.sass */
 .tourism__text .tourism-message p, .tourism .tourism-message p {
   color: #f6f5ee;
 }
-/* line 128, ../../sass_lib/_typography.sass */
+/* line 138, ../../sass_lib/_typography.sass */
 .tourism__text figcaption, .tourism figcaption {
   font-family: "Julius Sans One", sans-serif;
   font-size: 14.4px;
-}
-
-/* line 132, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 135, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
 }
 
 /* line 3, ../../blocks/quotes/_quotes.sass */
@@ -1070,7 +1078,7 @@ em {
 }
 
 /* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .welcome-message__inner, .copyright__inner {
+.nav__inner, .copyright__inner {
   width: 90%;
   margin: 0 auto;
 }
@@ -1098,55 +1106,66 @@ em {
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 7, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
+/* line 10, ../../sass_lib/_typography.sass */
 .nav__text, .nav {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
   text-transform: uppercase;
 }
-/* line 9, ../../sass_lib/_typography.sass */
+/* line 15, ../../sass_lib/_typography.sass */
 .nav__text .nav__link, .nav .nav__link {
   color: #edeadc;
 }
 
-/* line 15, ../../sass_lib/_typography.sass */
+/* line 21, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
   font-family: "Julius Sans One", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 20, ../../sass_lib/_typography.sass */
+/* line 26, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Libre Baskerville", sans-serif;
-  font-style: italic;
-  text-shadow: 0px 0px 1px #aaaaaa;
+  font-family: "Julius Sans One", sans-serif;
+}
+/* line 30, ../../sass_lib/_typography.sass */
+.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
+  color: #d6a34b;
 }
 
 @media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 26, ../../sass_lib/_typography.sass */
+  /* line 34, ../../sass_lib/_typography.sass */
   .welcome-message__title {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
   }
 
-  /* line 28, ../../sass_lib/_typography.sass */
+  /* line 37, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
-    padding: 1em 0 0;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 34, ../../sass_lib/_typography.sass */
+  /* line 44, ../../sass_lib/_typography.sass */
   .welcome-message__title {
     font-size: 51.2px;
   }
 
-  /* line 36, ../../sass_lib/_typography.sass */
+  /* line 46, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
     font-size: 25.6px;
-    padding: 1em 4em;
   }
 }
-/* line 42, ../../sass_lib/_typography.sass */
+/* line 52, ../../sass_lib/_typography.sass */
 .products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 28.8px;
@@ -1155,7 +1174,7 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
   margin-bottom: 1em;
 }
-/* line 50, ../../sass_lib/_typography.sass */
+/* line 60, ../../sass_lib/_typography.sass */
 .products__text p, .products p, .tourism__text p, .tourism p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -1164,7 +1183,7 @@ em {
   color: #75738b;
 }
 
-/* line 59, ../../sass_lib/_typography.sass */
+/* line 69, ../../sass_lib/_typography.sass */
 .product__text .product__name, .product .product__name {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
@@ -1172,7 +1191,7 @@ em {
   color: #2a2827;
   text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 66, ../../sass_lib/_typography.sass */
+/* line 76, ../../sass_lib/_typography.sass */
 .product__text .product__ingredients, .product .product__ingredients {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -1181,14 +1200,14 @@ em {
   text-indent: 1em;
   color: #7f7d6f;
 }
-/* line 74, ../../sass_lib/_typography.sass */
+/* line 84, ../../sass_lib/_typography.sass */
 .product__text .product__type, .product .product__type {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 3.5em;
   color: #75738b;
 }
-/* line 80, ../../sass_lib/_typography.sass */
+/* line 90, ../../sass_lib/_typography.sass */
 .product__text .product__tasting-notes, .product .product__tasting-notes {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -1196,14 +1215,14 @@ em {
   color: #edeadc;
 }
 
-/* line 86, ../../sass_lib/_typography.sass */
+/* line 96, ../../sass_lib/_typography.sass */
 .footer__text, .footer {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 1.5em;
   color: #6d6e71;
 }
-/* line 92, ../../sass_lib/_typography.sass */
+/* line 102, ../../sass_lib/_typography.sass */
 .footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 16px;
@@ -1211,24 +1230,24 @@ em {
   line-height: 4em;
   color: #dceadc;
 }
-/* line 99, ../../sass_lib/_typography.sass */
+/* line 109, ../../sass_lib/_typography.sass */
 .footer__text .copyright, .footer .copyright {
   font-size: 12px;
   color: #dceadc;
 }
-/* line 103, ../../sass_lib/_typography.sass */
+/* line 113, ../../sass_lib/_typography.sass */
 .footer__text .social a, .footer .social a {
   color: #6d6e71;
 }
 
-/* line 108, ../../sass_lib/_typography.sass */
+/* line 118, ../../sass_lib/_typography.sass */
 .quote__text p, .quote p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 28px;
   font-style: italic;
   line-height: 46px;
 }
-/* line 114, ../../sass_lib/_typography.sass */
+/* line 124, ../../sass_lib/_typography.sass */
 .quote__text .author, .quote .author {
   font-size: 18px;
   font-weight: bold;
@@ -1237,28 +1256,18 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
 }
 
-/* line 123, ../../sass_lib/_typography.sass */
+/* line 133, ../../sass_lib/_typography.sass */
 .tourism__text .tourism__title, .tourism .tourism__title {
   color: #2a2827;
 }
-/* line 125, ../../sass_lib/_typography.sass */
+/* line 135, ../../sass_lib/_typography.sass */
 .tourism__text .tourism-message p, .tourism .tourism-message p {
   color: #f6f5ee;
 }
-/* line 128, ../../sass_lib/_typography.sass */
+/* line 138, ../../sass_lib/_typography.sass */
 .tourism__text figcaption, .tourism figcaption {
   font-family: "Julius Sans One", sans-serif;
   font-size: 14.4px;
-}
-
-/* line 132, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 135, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
 }
 
 /*------------------------------------------------------------------
@@ -1383,7 +1392,7 @@ em {
  *
  *------------------------------------------------------------------- */
 /* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .welcome-message__inner, .copyright__inner {
+.nav__inner, .copyright__inner {
   width: 90%;
   margin: 0 auto;
 }
@@ -1411,55 +1420,66 @@ em {
 }
 
 /* line 4, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 7, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
+/* line 10, ../../sass_lib/_typography.sass */
 .nav__text, .nav {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
   text-transform: uppercase;
 }
-/* line 9, ../../sass_lib/_typography.sass */
+/* line 15, ../../sass_lib/_typography.sass */
 .nav__text .nav__link, .nav .nav__link {
   color: #edeadc;
 }
 
-/* line 15, ../../sass_lib/_typography.sass */
+/* line 21, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
   font-family: "Julius Sans One", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 20, ../../sass_lib/_typography.sass */
+/* line 26, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Libre Baskerville", sans-serif;
-  font-style: italic;
-  text-shadow: 0px 0px 1px #aaaaaa;
+  font-family: "Julius Sans One", sans-serif;
+}
+/* line 30, ../../sass_lib/_typography.sass */
+.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
+  color: #d6a34b;
 }
 
 @media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 26, ../../sass_lib/_typography.sass */
+  /* line 34, ../../sass_lib/_typography.sass */
   .welcome-message__title {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
   }
 
-  /* line 28, ../../sass_lib/_typography.sass */
+  /* line 37, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
-    padding: 1em 0 0;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 34, ../../sass_lib/_typography.sass */
+  /* line 44, ../../sass_lib/_typography.sass */
   .welcome-message__title {
     font-size: 51.2px;
   }
 
-  /* line 36, ../../sass_lib/_typography.sass */
+  /* line 46, ../../sass_lib/_typography.sass */
   .welcome-message__tag-line {
     font-size: 25.6px;
-    padding: 1em 4em;
   }
 }
-/* line 42, ../../sass_lib/_typography.sass */
+/* line 52, ../../sass_lib/_typography.sass */
 .products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 28.8px;
@@ -1468,7 +1488,7 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
   margin-bottom: 1em;
 }
-/* line 50, ../../sass_lib/_typography.sass */
+/* line 60, ../../sass_lib/_typography.sass */
 .products__text p, .products p, .tourism__text p, .tourism p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -1477,7 +1497,7 @@ em {
   color: #75738b;
 }
 
-/* line 59, ../../sass_lib/_typography.sass */
+/* line 69, ../../sass_lib/_typography.sass */
 .product__text .product__name, .product .product__name {
   font-family: "Julius Sans One", sans-serif;
   font-size: 19.2px;
@@ -1485,7 +1505,7 @@ em {
   color: #2a2827;
   text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 66, ../../sass_lib/_typography.sass */
+/* line 76, ../../sass_lib/_typography.sass */
 .product__text .product__ingredients, .product .product__ingredients {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -1494,14 +1514,14 @@ em {
   text-indent: 1em;
   color: #7f7d6f;
 }
-/* line 74, ../../sass_lib/_typography.sass */
+/* line 84, ../../sass_lib/_typography.sass */
 .product__text .product__type, .product .product__type {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 3.5em;
   color: #75738b;
 }
-/* line 80, ../../sass_lib/_typography.sass */
+/* line 90, ../../sass_lib/_typography.sass */
 .product__text .product__tasting-notes, .product .product__tasting-notes {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
@@ -1509,14 +1529,14 @@ em {
   color: #edeadc;
 }
 
-/* line 86, ../../sass_lib/_typography.sass */
+/* line 96, ../../sass_lib/_typography.sass */
 .footer__text, .footer {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 14.4px;
   line-height: 1.5em;
   color: #6d6e71;
 }
-/* line 92, ../../sass_lib/_typography.sass */
+/* line 102, ../../sass_lib/_typography.sass */
 .footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
   font-family: "Julius Sans One", sans-serif;
   font-size: 16px;
@@ -1524,24 +1544,24 @@ em {
   line-height: 4em;
   color: #dceadc;
 }
-/* line 99, ../../sass_lib/_typography.sass */
+/* line 109, ../../sass_lib/_typography.sass */
 .footer__text .copyright, .footer .copyright {
   font-size: 12px;
   color: #dceadc;
 }
-/* line 103, ../../sass_lib/_typography.sass */
+/* line 113, ../../sass_lib/_typography.sass */
 .footer__text .social a, .footer .social a {
   color: #6d6e71;
 }
 
-/* line 108, ../../sass_lib/_typography.sass */
+/* line 118, ../../sass_lib/_typography.sass */
 .quote__text p, .quote p {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 28px;
   font-style: italic;
   line-height: 46px;
 }
-/* line 114, ../../sass_lib/_typography.sass */
+/* line 124, ../../sass_lib/_typography.sass */
 .quote__text .author, .quote .author {
   font-size: 18px;
   font-weight: bold;
@@ -1550,28 +1570,18 @@ em {
   text-shadow: 0px 0px 1px #aaaaaa;
 }
 
-/* line 123, ../../sass_lib/_typography.sass */
+/* line 133, ../../sass_lib/_typography.sass */
 .tourism__text .tourism__title, .tourism .tourism__title {
   color: #2a2827;
 }
-/* line 125, ../../sass_lib/_typography.sass */
+/* line 135, ../../sass_lib/_typography.sass */
 .tourism__text .tourism-message p, .tourism .tourism-message p {
   color: #f6f5ee;
 }
-/* line 128, ../../sass_lib/_typography.sass */
+/* line 138, ../../sass_lib/_typography.sass */
 .tourism__text figcaption, .tourism figcaption {
   font-family: "Julius Sans One", sans-serif;
   font-size: 14.4px;
-}
-
-/* line 132, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 135, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
 }
 
 /* line 15, ../../blocks/footer/_footer.sass */

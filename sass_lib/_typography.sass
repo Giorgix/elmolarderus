@@ -1,6 +1,12 @@
 $font--family-julius: "Julius Sans One", sans-serif
 $font--family-baskerville: "Libre Baskerville", sans-serif
 
+strong
+  font-weight: 700
+
+em
+  font-style: italic
+
 .nav__text
   font-family: $font--family-julius
   font-size: 19.2px
@@ -15,27 +21,31 @@ $font--family-baskerville: "Libre Baskerville", sans-serif
   & .welcome-message__title
     font-family: $font--family-julius
     text-transform: uppercase
-    +text-shadow
+    //+text-shadow
 
   & .welcome-message__tag-line
-    font-family: $font--family-baskerville
-    font-style: italic
-    +text-shadow
+    font-family: $font--family-julius
+    //font-style: italic
+    //+text-shadow
+    strong
+      color: #D6A34B
 
 +at_breakpoint(palm)
   .welcome-message__title
-    font-size: 35px
+    font-size: 32px
+    text-align: center
   .welcome-message__tag-line
-    font-size: 20px
+    font-size: 16px
     line-height: 1.5
-    padding: 1em 0 0
+    text-align: center
+    //padding: 1em 0 0
 
 +at_breakpoint(desk)
   .welcome-message__title
     font-size: 51.2px
   .welcome-message__tag-line
     font-size: 25.6px
-    padding: 1em 4em
+    //padding: 1em 4em
 
 .products__text, .tourism__text
 
@@ -128,9 +138,3 @@ $font--family-baskerville: "Libre Baskerville", sans-serif
   figcaption
     font-family: $font--family-julius
     font-size: 14.4px
-
-strong
-  font-weight: 700
-
-em
-  font-style: italic
