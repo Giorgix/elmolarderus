@@ -20,25 +20,24 @@
   margin: 2.5em 1.5em
 
 .tourism__media__inner
-  @extend %left
+  //@extend %left
   margin: 0
 
 
 figure
   position: relative
   line-height: 0
+  //+at-breakpoint(desk)
+    margin: 2% auto
+    width: 80%
   img
     width: 100%
     //margin-bottom: 1em
-    //width: 400px//only width if the img is wider than taller and only height if the opposite to preserve ratio.
-  
   figcaption
     width: 100%
     position: absolute
-    //bottom: 0
     top: 46%
     background-color: rgba(30, 30, 30, 0.5)
-    //@extend %flag__banner
 
 .tourism-message
   background: $tertiary-color url('../images/tourism__background.png') bottom left no-repeat
@@ -53,6 +52,3 @@ figure
     +column(50%, true)
     margin-left: 50%
     background: $tertiary-color url('../images/tourism__background.png') top left no-repeat
-
-.tourism-message__inner
-  @extend %right

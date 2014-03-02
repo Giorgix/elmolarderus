@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icons';
-	src:url('icons.eot?-udoz7');
-	src:url('icons.eot?#iefix-udoz7') format('embedded-opentype'),
-		url('icons.woff?-udoz7') format('woff'),
-		url('icons.ttf?-udoz7') format('truetype'),
-		url('icons.svg?-udoz7#icons') format('svg');
+	src:url('icons.eot?-tctzgn');
+	src:url('icons.eot?#iefix-tctzgn') format('embedded-opentype'),
+		url('icons.woff?-tctzgn') format('woff'),
+		url('icons.ttf?-tctzgn') format('truetype'),
+		url('icons.svg?-tctzgn#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -34,4 +34,7 @@
 }
 .icon-mail4:before {
 	content: "\e763";
+}
+.icon-leaf:before {
+	content: "\e602";
 }
