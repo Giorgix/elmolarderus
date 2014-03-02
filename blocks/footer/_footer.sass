@@ -1,19 +1,8 @@
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *-------------------------------------------------------------------*/
-@import '../../sass_lib/helpers'
-@import '../../sass_lib/typography'
+//@import '../../sass_lib/helpers'
+//@import '../../sass_lib/typography'
 
 .footer
-  background-color: #1e1e1e
+  background-color: $primary-color--very-loud
   @extend .footer__text
 
   > *
@@ -21,25 +10,17 @@
 
 
 
-.postal-address
-  display: inline-block
-  width: 33%
-  padding: 2% 5% 2% 15%
+.postal-address, .contact-point, .social, .faq
+  padding: 2% 5% 2% 5%
+  +at-breakpoint(palm)
+    +column(50%)
+  +at-breakpoint(lap)
+    +column(50%)
+  +at-breakpoint(desk)
+    +column(25%)
+  
 
-.contact-point
-  display: inline-block
-
-  vertical-align: top
-  width: 33%
-  padding: 2%
-
-.social
-  display: inline-block
-  vertical-align: top
-  width: 33%
-  padding: 2% 15% 2% 5%
-
-.social__icon
+.social__icon, .faq__icon
   width: 40px
   height: 40px
   vertical-align: middle

@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 13, ../../sass_lib/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,781 +16,92 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../sass_lib/_reset.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../sass_lib/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../sass_lib/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 35, ../../sass_lib/_reset.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 41, ../../sass_lib/_reset.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+/* line 45, ../../sass_lib/_reset.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 50, ../../sass_lib/_reset.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 54, ../../sass_lib/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .copyright__inner {
+/*
+ * custom reset
+ */
+/* line 62, ../../sass_lib/_reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 66, ../../sass_lib/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/*----- mixin font-face ------ */
+/*------------ typography  loader ----------- */
+@font-face {
+  font-family: "icons";
+  src: url("../web-fonts/font-icons/icons.eot");
+  src: url("../web-fonts/font-icons/icons.eot?#iefix") format("embedded-opentype"), url("../web-fonts/font-icons/icons.woff") format("woff"), url("../web-fonts/font-icons/icons.ttf") format("truetype"), url("../web-fonts/font-icons/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 28, ../../sass_lib/_helpers.sass */
+.copyright__inner {
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 6, ../../sass_lib/_helpers.sass */
-.products-message__inner, .tourism__media__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 6, ../../sass_lib/_helpers.sass */
-  .products-message__inner, .tourism__media__inner {
-    margin: 10% 10% 10% 10%;
-  }
+/* line 32, ../../sass_lib/_helpers.sass */
+.tourism__media__inner {
+  margin: 10%;
 }
 
-/* line 10, ../../sass_lib/_helpers.sass */
-.products__list__inner, .tourism-message__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 10, ../../sass_lib/_helpers.sass */
-  .products__list__inner, .tourism-message__inner {
-    margin: 10% 10% 10% 10%;
-  }
-}
-
-/* line 4, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 7, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
-}
-
-/* line 10, ../../sass_lib/_typography.sass */
-.nav__text, .nav {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-}
-/* line 15, ../../sass_lib/_typography.sass */
-.nav__text .nav__link, .nav .nav__link {
-  color: #edeadc;
-}
-
-/* line 21, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
-  font-family: "Julius Sans One", sans-serif;
-  text-transform: uppercase;
-}
-/* line 26, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Julius Sans One", sans-serif;
-}
-/* line 30, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
-  color: #d6a34b;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 34, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  /* line 37, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 44, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 41.2px;
-  }
-  /* line 46, ../../sass_lib/_typography.sass */
-  .welcome-message__title:first-letter {
-    font-size: 70px;
-    letter-spacing: -4px;
-  }
-
-  /* line 50, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 20.6px;
-  }
-}
-/* line 56, ../../sass_lib/_typography.sass */
-.products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 28.8px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-  margin-bottom: 1em;
-}
-/* line 64, ../../sass_lib/_typography.sass */
-.products__text p, .products p, .tourism__text p, .tourism p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  line-height: 2em;
-  margin: 0.75em 0;
-  color: #75738b;
-}
-
-/* line 73, ../../sass_lib/_typography.sass */
-.product__text .product__name, .product .product__name {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-/* line 80, ../../sass_lib/_typography.sass */
-.product__text .product__ingredients, .product .product__ingredients {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 0.1;
-  text-indent: 1em;
-  color: #7f7d6f;
-}
-/* line 88, ../../sass_lib/_typography.sass */
-.product__text .product__type, .product .product__type {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 3.5em;
-  color: #75738b;
-}
-/* line 94, ../../sass_lib/_typography.sass */
-.product__text .product__tasting-notes, .product .product__tasting-notes {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-variant: bold;
-  color: #edeadc;
-}
-
-/* line 100, ../../sass_lib/_typography.sass */
-.footer__text, .footer {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 1.5em;
-  color: #6d6e71;
-}
-/* line 106, ../../sass_lib/_typography.sass */
-.footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 4em;
-  color: #dceadc;
-}
-/* line 113, ../../sass_lib/_typography.sass */
-.footer__text .copyright, .footer .copyright {
-  font-size: 12px;
-  color: #dceadc;
-}
-/* line 117, ../../sass_lib/_typography.sass */
-.footer__text .social a, .footer .social a {
-  color: #6d6e71;
-}
-
-/* line 122, ../../sass_lib/_typography.sass */
-.quote__text p, .quote p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 28px;
-  font-style: italic;
-  line-height: 46px;
-}
-/* line 128, ../../sass_lib/_typography.sass */
-.quote__text .author, .quote .author {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #d48158;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-
-/* line 137, ../../sass_lib/_typography.sass */
-.tourism__text .tourism__title, .tourism .tourism__title {
-  color: #2a2827;
-}
-/* line 139, ../../sass_lib/_typography.sass */
-.tourism__text .tourism-message p, .tourism .tourism-message p {
-  color: #f6f5ee;
-}
-/* line 142, ../../sass_lib/_typography.sass */
-.tourism__text figcaption, .tourism figcaption {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 14.4px;
-}
-
-/* line 4, ../../blocks/nav/_nav.sass */
-.nav {
-  background-color: #1e1e1e;
-  border-bottom: 3px solid black;
-  width: 100%;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 10, ../../blocks/nav/_nav.sass */
-  .nav {
-    padding-top: 200px;
-  }
-
-  /* line 12, ../../blocks/nav/_nav.sass */
-  .nav__list {
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 18, ../../blocks/nav/_nav.sass */
-  .nav__list {
-    text-align: justify;
-    font-size: 0;
-    margin-left: 180px;
-  }
-  /* line 21, ../../sass_lib/_helpers.sass */
-  .nav__list:after {
-    content: " ";
-    width: 100%;
-    display: inline-block;
-  }
-  /* line 26, ../../sass_lib/_helpers.sass */
-  .nav__list .nav__item {
-    display: inline-block;
-    font-size: 16px;
-  }
-}
-
-/* line 23, ../../blocks/nav/_nav.sass */
-.nav__item {
-  padding: 1.5em 1em;
-}
-
-/* line 28, ../../blocks/nav/_nav.sass */
-.nav__link:hover {
-  text-shadow: 0px 0px 1px #aaaaaa;
-  border-bottom: 1px solid grey;
-}
-
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/* line 13, ../../blocks/logo/_logo.sass */
-.logo {
-  display: block;
-  position: absolute;
-  top: 0;
-  z-index: 99999;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 20, ../../blocks/logo/_logo.sass */
-  .logo {
-    margin-left: -90px;
-    left: 50%;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 25, ../../blocks/logo/_logo.sass */
-  .logo {
-    left: 5%;
-  }
-}
-/* line 28, ../../blocks/logo/_logo.sass */
-.logo__image {
-  height: 180px;
-  width: 180px;
-}
-
-/* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .copyright__inner {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* line 6, ../../sass_lib/_helpers.sass */
-.products-message__inner, .tourism__media__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 6, ../../sass_lib/_helpers.sass */
-  .products-message__inner, .tourism__media__inner {
-    margin: 10% 10% 10% 10%;
-  }
-}
-
-/* line 10, ../../sass_lib/_helpers.sass */
-.products__list__inner, .tourism-message__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 10, ../../sass_lib/_helpers.sass */
-  .products__list__inner, .tourism-message__inner {
-    margin: 10% 10% 10% 10%;
-  }
-}
-
-/* line 4, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 7, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
-}
-
-/* line 10, ../../sass_lib/_typography.sass */
-.nav__text, .nav {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-}
-/* line 15, ../../sass_lib/_typography.sass */
-.nav__text .nav__link, .nav .nav__link {
-  color: #edeadc;
-}
-
-/* line 21, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
-  font-family: "Julius Sans One", sans-serif;
-  text-transform: uppercase;
-}
-/* line 26, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Julius Sans One", sans-serif;
-}
-/* line 30, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
-  color: #d6a34b;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 34, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  /* line 37, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 44, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 41.2px;
-  }
-  /* line 46, ../../sass_lib/_typography.sass */
-  .welcome-message__title:first-letter {
-    font-size: 70px;
-    letter-spacing: -4px;
-  }
-
-  /* line 50, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 20.6px;
-  }
-}
-/* line 56, ../../sass_lib/_typography.sass */
-.products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 28.8px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-  margin-bottom: 1em;
-}
-/* line 64, ../../sass_lib/_typography.sass */
-.products__text p, .products p, .tourism__text p, .tourism p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  line-height: 2em;
-  margin: 0.75em 0;
-  color: #75738b;
-}
-
-/* line 73, ../../sass_lib/_typography.sass */
-.product__text .product__name, .product .product__name {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-/* line 80, ../../sass_lib/_typography.sass */
-.product__text .product__ingredients, .product .product__ingredients {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 0.1;
-  text-indent: 1em;
-  color: #7f7d6f;
-}
-/* line 88, ../../sass_lib/_typography.sass */
-.product__text .product__type, .product .product__type {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 3.5em;
-  color: #75738b;
-}
-/* line 94, ../../sass_lib/_typography.sass */
-.product__text .product__tasting-notes, .product .product__tasting-notes {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-variant: bold;
-  color: #edeadc;
-}
-
-/* line 100, ../../sass_lib/_typography.sass */
-.footer__text, .footer {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 1.5em;
-  color: #6d6e71;
-}
-/* line 106, ../../sass_lib/_typography.sass */
-.footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 4em;
-  color: #dceadc;
-}
-/* line 113, ../../sass_lib/_typography.sass */
-.footer__text .copyright, .footer .copyright {
-  font-size: 12px;
-  color: #dceadc;
-}
-/* line 117, ../../sass_lib/_typography.sass */
-.footer__text .social a, .footer .social a {
-  color: #6d6e71;
-}
-
-/* line 122, ../../sass_lib/_typography.sass */
-.quote__text p, .quote p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 28px;
-  font-style: italic;
-  line-height: 46px;
-}
-/* line 128, ../../sass_lib/_typography.sass */
-.quote__text .author, .quote .author {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #d48158;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-
-/* line 137, ../../sass_lib/_typography.sass */
-.tourism__text .tourism__title, .tourism .tourism__title {
-  color: #2a2827;
-}
-/* line 139, ../../sass_lib/_typography.sass */
-.tourism__text .tourism-message p, .tourism .tourism-message p {
-  color: #f6f5ee;
-}
-/* line 142, ../../sass_lib/_typography.sass */
-.tourism__text figcaption, .tourism figcaption {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 14.4px;
-}
-
-/* line 4, ../../blocks/welcome_message/_welcome_message.sass */
-.welcome-message {
-  background-image: url("../images/header__background.jpg");
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 12, ../../blocks/welcome_message/_welcome_message.sass */
-  .welcome-message {
-    background-size: 1000px 325px;
-  }
-}
-/* line 16, ../../blocks/welcome_message/_welcome_message.sass */
-.welcome-message:after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  right: 0;
-}
-
-/* line 26, ../../blocks/welcome_message/_welcome_message.sass */
-.welcome-message__inner {
-  padding: 8% 0;
-}
-
-/* line 30, ../../blocks/welcome_message/_welcome_message.sass */
-.welcome-message__title {
-  padding: 1% 5% 1% 5%;
-  margin-right: 5%;
-  color: #f6f5ee;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* line 36, ../../blocks/welcome_message/_welcome_message.sass */
-.welcome-message__tag-line {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #f6f5ee;
-  padding: 1% 5% 1% 5%;
-  margin-right: 5%;
-}
-
-/* line 1, ../../blocks/content/_content.sass */
-.content {
-  border-top: 3px solid black;
-}
-
-/* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .copyright__inner {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* line 6, ../../sass_lib/_helpers.sass */
-.products-message__inner, .tourism__media__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 6, ../../sass_lib/_helpers.sass */
-  .products-message__inner, .tourism__media__inner {
-    margin: 10% 10% 10% 10%;
-  }
-}
-
-/* line 10, ../../sass_lib/_helpers.sass */
-.products__list__inner, .tourism-message__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 10, ../../sass_lib/_helpers.sass */
-  .products__list__inner, .tourism-message__inner {
-    margin: 10% 10% 10% 10%;
-  }
-}
-
-/* line 4, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 7, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
-}
-
-/* line 10, ../../sass_lib/_typography.sass */
-.nav__text, .nav {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-}
-/* line 15, ../../sass_lib/_typography.sass */
-.nav__text .nav__link, .nav .nav__link {
-  color: #edeadc;
-}
-
-/* line 21, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
-  font-family: "Julius Sans One", sans-serif;
-  text-transform: uppercase;
-}
-/* line 26, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Julius Sans One", sans-serif;
-}
-/* line 30, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
-  color: #d6a34b;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 34, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  /* line 37, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 44, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 41.2px;
-  }
-  /* line 46, ../../sass_lib/_typography.sass */
-  .welcome-message__title:first-letter {
-    font-size: 70px;
-    letter-spacing: -4px;
-  }
-
-  /* line 50, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 20.6px;
-  }
-}
-/* line 56, ../../sass_lib/_typography.sass */
-.products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 28.8px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-  margin-bottom: 1em;
-}
-/* line 64, ../../sass_lib/_typography.sass */
-.products__text p, .products p, .tourism__text p, .tourism p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  line-height: 2em;
-  margin: 0.75em 0;
-  color: #75738b;
-}
-
-/* line 73, ../../sass_lib/_typography.sass */
-.product__text .product__name, .product .product__name {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-/* line 80, ../../sass_lib/_typography.sass */
-.product__text .product__ingredients, .product .product__ingredients {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 0.1;
-  text-indent: 1em;
-  color: #7f7d6f;
-}
-/* line 88, ../../sass_lib/_typography.sass */
-.product__text .product__type, .product .product__type {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 3.5em;
-  color: #75738b;
-}
-/* line 94, ../../sass_lib/_typography.sass */
-.product__text .product__tasting-notes, .product .product__tasting-notes {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-variant: bold;
-  color: #edeadc;
-}
-
-/* line 100, ../../sass_lib/_typography.sass */
-.footer__text, .footer {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 1.5em;
-  color: #6d6e71;
-}
-/* line 106, ../../sass_lib/_typography.sass */
-.footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 4em;
-  color: #dceadc;
-}
-/* line 113, ../../sass_lib/_typography.sass */
-.footer__text .copyright, .footer .copyright {
-  font-size: 12px;
-  color: #dceadc;
-}
-/* line 117, ../../sass_lib/_typography.sass */
-.footer__text .social a, .footer .social a {
-  color: #6d6e71;
-}
-
-/* line 122, ../../sass_lib/_typography.sass */
-.quote__text p, .quote p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 28px;
-  font-style: italic;
-  line-height: 46px;
-}
-/* line 128, ../../sass_lib/_typography.sass */
-.quote__text .author, .quote .author {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #d48158;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-
-/* line 137, ../../sass_lib/_typography.sass */
-.tourism__text .tourism__title, .tourism .tourism__title {
-  color: #2a2827;
-}
-/* line 139, ../../sass_lib/_typography.sass */
-.tourism__text .tourism-message p, .tourism .tourism-message p {
-  color: #f6f5ee;
-}
-/* line 142, ../../sass_lib/_typography.sass */
-.tourism__text figcaption, .tourism figcaption {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 14.4px;
+/* line 35, ../../sass_lib/_helpers.sass */
+.tourism-message__inner {
+  margin: 10%;
 }
 
 /*------------------------------------------------------------------
@@ -824,247 +135,529 @@ em {
   width: 100%;
 }
 
-/* line 6, ../../blocks/products/_products.sass */
-.products {
-  font-size: 0;
-  overflow: hidden;
+/* line 31, ../../sass_lib/_typography.sass */
+html {
+  line-height: 1.5;
 }
-
-/* line 11, ../../blocks/products/_products.sass */
-.products-message {
-  background: #f6f5ee url("../images/products__background.png") bottom right no-repeat;
-  vertical-align: top;
-}
-
-/* line 18, ../../blocks/products/_products.sass */
-.products__list {
-  background-image: url("../images/textures/light_background.png");
-  vertical-align: top;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 26, ../../blocks/products/_products.sass */
-  .products-message, .products__list {
-    padding: 10% 0;
+@media only screen and (max-width: 400px) {
+  /* line 31, ../../sass_lib/_typography.sass */
+  html {
+    font-size: 14px;
   }
 }
-@media only screen and (min-width: 64.063em) {
-  /* line 30, ../../blocks/products/_products.sass */
-  .products-message, .products__list {
-    width: 50%;
-    display: inline-block;
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  /* line 31, ../../sass_lib/_typography.sass */
+  html {
+    font-size: 14px;
   }
 }
-/* line 36, ../../blocks/products/_products.sass */
-.product {
-  margin-bottom: 1em;
+@media only screen and (min-width: 801px) {
+  /* line 31, ../../sass_lib/_typography.sass */
+  html {
+    font-size: 16px;
+  }
 }
 
-/* line 44, ../../blocks/products/_products.sass */
-.product__info {
-  padding-left: 1em;
+/* line 42, ../../sass_lib/_typography.sass */
+.nav__text, .nav__item {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
 }
-
-/* line 48, ../../blocks/products/_products.sass */
-.product__tasting-notes {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  background: #1e1e1e;
-  box-shadow: 0 0 1px black;
-}
-
-/* line 56, ../../blocks/products/_products.sass */
-.product__tasting-notes:hover {
-  box-shadow: 0 0 5px black;
-}
-
-/* line 4, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 7, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
-}
-
-/* line 10, ../../sass_lib/_typography.sass */
-.nav__text, .nav {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-}
-/* line 15, ../../sass_lib/_typography.sass */
-.nav__text .nav__link, .nav .nav__link {
+/* line 47, ../../sass_lib/_typography.sass */
+.nav__text .nav__link, .nav__item .nav__link {
   color: #edeadc;
 }
 
-/* line 21, ../../sass_lib/_typography.sass */
+/* line 51, ../../sass_lib/_typography.sass */
+.welcome-message__text, .welcome-message {
+  white-space: pre-wrap;
+}
+/* line 53, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
-  font-family: "Julius Sans One", sans-serif;
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
+  color: #efddd2;
 }
-/* line 26, ../../sass_lib/_typography.sass */
+/* line 60, ../../sass_lib/_typography.sass */
 .welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Julius Sans One", sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
+  color: #efddd2;
 }
-/* line 30, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
+/* line 66, ../../sass_lib/_typography.sass */
+.welcome-message__text strong, .welcome-message strong {
+  font-size: 130%;
+  color: #edeadc;
+}
+/* line 69, ../../sass_lib/_typography.sass */
+.welcome-message__text .charM, .welcome-message .charM {
   color: #d6a34b;
 }
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 34, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  /* line 37, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-  }
+/* line 71, ../../sass_lib/_typography.sass */
+.welcome-message__text .charY, .welcome-message .charY, .welcome-message__text .charEN, .welcome-message .charEN {
+  font-size: 60%;
+  line-height: 2;
+  text-transform: lowercase;
 }
-@media only screen and (min-width: 64.063em) {
-  /* line 44, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 41.2px;
-  }
-  /* line 46, ../../sass_lib/_typography.sass */
-  .welcome-message__title:first-letter {
-    font-size: 70px;
-    letter-spacing: -4px;
-  }
 
-  /* line 50, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 20.6px;
-  }
-}
-/* line 56, ../../sass_lib/_typography.sass */
+/* line 89, ../../sass_lib/_typography.sass */
 .products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 28.8px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
   text-transform: uppercase;
-  color: #2a2827;
+  color: #1e1e1e;
   text-shadow: 0px 0px 1px #aaaaaa;
-  margin-bottom: 1em;
 }
-/* line 64, ../../sass_lib/_typography.sass */
+/* line 99, ../../sass_lib/_typography.sass */
 .products__text p, .products p, .tourism__text p, .tourism p {
-  font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
-  line-height: 2em;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
   margin: 0.75em 0;
-  color: #75738b;
+  color: #6d6e71;
 }
 
-/* line 73, ../../sass_lib/_typography.sass */
+/* line 107, ../../sass_lib/_typography.sass */
 .product__text .product__name, .product .product__name {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.14286;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
   text-transform: uppercase;
-  color: #2a2827;
+  color: #1e1e1e;
   text-shadow: 0px 0px 1px #aaaaaa;
 }
-/* line 80, ../../sass_lib/_typography.sass */
+/* line 114, ../../sass_lib/_typography.sass */
 .product__text .product__ingredients, .product .product__ingredients {
-  font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
-  line-height: 0.1;
-  text-indent: 1em;
-  color: #7f7d6f;
+  color: #6d6e71;
 }
-/* line 88, ../../sass_lib/_typography.sass */
+/* line 121, ../../sass_lib/_typography.sass */
 .product__text .product__type, .product .product__type {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 3.5em;
-  color: #75738b;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  color: #1e1e1e;
 }
-/* line 94, ../../sass_lib/_typography.sass */
+/* line 127, ../../sass_lib/_typography.sass */
 .product__text .product__tasting-notes, .product .product__tasting-notes {
-  font-family: "Libre Baskerville", sans-serif;
   font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
   font-variant: bold;
   color: #edeadc;
 }
 
-/* line 100, ../../sass_lib/_typography.sass */
+/* line 132, ../../sass_lib/_typography.sass */
 .footer__text, .footer {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 1.5em;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
   color: #6d6e71;
 }
-/* line 106, ../../sass_lib/_typography.sass */
-.footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
-  font-family: "Julius Sans One", sans-serif;
+/* line 137, ../../sass_lib/_typography.sass */
+.footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title, .footer__text .faq__title, .footer .faq__title {
   font-size: 16px;
+  font-size: 1rem;
+  line-height: 2.25;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
-  line-height: 4em;
-  color: #dceadc;
+  color: #edeadc;
 }
-/* line 113, ../../sass_lib/_typography.sass */
+/* line 144, ../../sass_lib/_typography.sass */
 .footer__text .copyright, .footer .copyright {
   font-size: 12px;
-  color: #dceadc;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  color: #edeadc;
 }
-/* line 117, ../../sass_lib/_typography.sass */
-.footer__text .social a, .footer .social a {
+/* line 149, ../../sass_lib/_typography.sass */
+.footer__text .social a, .footer .social a, .footer__text .faq a, .footer .faq a {
   color: #6d6e71;
 }
 
-/* line 122, ../../sass_lib/_typography.sass */
+/* line 154, ../../sass_lib/_typography.sass */
 .quote__text p, .quote p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 28px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
-  line-height: 46px;
 }
-/* line 128, ../../sass_lib/_typography.sass */
+/* line 159, ../../sass_lib/_typography.sass */
 .quote__text .author, .quote .author {
   font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #d48158;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  color: #6d6e71;
   text-shadow: 0px 0px 1px #aaaaaa;
 }
 
-/* line 137, ../../sass_lib/_typography.sass */
+/* line 168, ../../sass_lib/_typography.sass */
 .tourism__text .tourism__title, .tourism .tourism__title {
-  color: #2a2827;
+  color: #1e1e1e;
 }
-/* line 139, ../../sass_lib/_typography.sass */
+/* line 170, ../../sass_lib/_typography.sass */
 .tourism__text .tourism-message p, .tourism .tourism-message p {
   color: #f6f5ee;
 }
-/* line 142, ../../sass_lib/_typography.sass */
+/* line 173, ../../sass_lib/_typography.sass */
 .tourism__text figcaption, .tourism figcaption {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 14.4px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #f6f5ee;
+  text-align: center;
 }
 
-/* line 3, ../../blocks/quotes/_quotes.sass */
-.quote {
-  padding: 150px 20% 0 20%;
-  position: relative;
-  margin-top: 15%;
+/* line 180, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 400;
 }
 
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 10, ../../blocks/quotes/_quotes.sass */
-  .quote {
-    padding: 150px 10% 0 10%;
+/* line 183, ../../sass_lib/_typography.sass */
+[data-icon]:before {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: icons;
+  line-height: 1;
+  content: " " attr(data-icon);
+  speak: none;
+}
+
+/* line 1, ../../blocks/nav/_nav.sass */
+.nav {
+  background-color: #1e1e1e;
+  border-bottom: 3px solid black;
+  line-height: 0;
+}
+
+/* line 6, ../../blocks/nav/_nav.sass */
+.nav__inner {
+  padding: 0 2%;
+}
+
+/* line 15, ../../blocks/nav/_nav.sass */
+.nav__list {
+  /* offset for logo, this must be equal
+   * to the width of logo in order to
+   * avoid the logo overlap the nav items
+   */
+}
+@media only screen and (max-width: 400px) {
+  /* line 15, ../../blocks/nav/_nav.sass */
+  .nav__list {
+    text-align: center;
+  }
+  /* line 44, ../../sass_lib/_helpers.sass */
+  .nav__list > [class$="__item"] {
+    display: inline-block;
   }
 }
-/* line 13, ../../blocks/quotes/_quotes.sass */
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  /* line 15, ../../blocks/nav/_nav.sass */
+  .nav__list {
+    text-align: center;
+  }
+  /* line 44, ../../sass_lib/_helpers.sass */
+  .nav__list > [class$="__item"] {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 801px) {
+  /* line 15, ../../blocks/nav/_nav.sass */
+  .nav__list {
+    text-align: justify;
+    margin-left: 180px;
+  }
+  /* line 44, ../../sass_lib/_helpers.sass */
+  .nav__list > [class$="__item"] {
+    display: inline-block;
+  }
+  /* line 48, ../../sass_lib/_helpers.sass */
+  .nav__list:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+/* line 32, ../../blocks/nav/_nav.sass */
+.nav__item {
+  padding: 0.5em;
+}
+
+/* line 40, ../../blocks/nav/_nav.sass */
+.nav__link:hover {
+  text-shadow: 0px 0px 1px #aaaaaa;
+  border-bottom: 1px solid grey;
+}
+
+/* line 1, ../../blocks/logo/_logo.sass */
+.logo {
+  background-color: #1e1e1e;
+}
+@media only screen and (max-width: 400px) {
+  /* line 1, ../../blocks/logo/_logo.sass */
+  .logo {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 801px) {
+  /* line 1, ../../blocks/logo/_logo.sass */
+  .logo {
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    left: 2%;
+    top: 0;
+    z-index: 99999;
+  }
+}
+
+/* line 13, ../../blocks/logo/_logo.sass */
+.logo__image {
+  height: 180px;
+  width: 180px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 28, ../../sass_lib/_helpers.sass */
+.copyright__inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 32, ../../sass_lib/_helpers.sass */
+.tourism__media__inner {
+  margin: 10%;
+}
+
+/* line 35, ../../sass_lib/_helpers.sass */
+.tourism-message__inner {
+  margin: 10%;
+}
+
+/* line 4, ../../blocks/welcome_message/_welcome_message.sass */
+.welcome-message {
+  background-image: url("../images/header__background.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+@media only screen and (min-width: 1920px) {
+  /* line 4, ../../blocks/welcome_message/_welcome_message.sass */
+  .welcome-message {
+    background-size: 100%;
+  }
+}
+
+/* line 14, ../../blocks/welcome_message/_welcome_message.sass */
+.welcome-message__inner {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  padding: 2% 0;
+}
+@media only screen and (max-width: 400px) {
+  /* line 14, ../../blocks/welcome_message/_welcome_message.sass */
+  .welcome-message__inner {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  /* line 14, ../../blocks/welcome_message/_welcome_message.sass */
+  .welcome-message__inner {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 801px) {
+  /* line 14, ../../blocks/welcome_message/_welcome_message.sass */
+  .welcome-message__inner {
+    width: 50%;
+  }
+}
+
+/* line 35, ../../blocks/welcome_message/_welcome_message.sass */
+.welcome-message__title {
+  position: relative;
+  z-index: 3;
+}
+/* line 38, ../../blocks/welcome_message/_welcome_message.sass */
+.welcome-message__title strong {
+  border-bottom: 5px solid rgba(109, 110, 113, 0.7);
+}
+
+/* line 48, ../../blocks/welcome_message/_welcome_message.sass */
+.welcome-message__tag-line {
+  padding-top: 1.5em;
+}
+
+/* line 1, ../../blocks/content/_content.sass */
+.content {
+  border-top: 3px solid black;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 1, ../../blocks/products/_products.sass */
+.products {
+  overflow: hidden;
+}
+
+/* line 6, ../../blocks/products/_products.sass */
+.products-message {
+  background: #f6f5ee url("../images/products__background.png") bottom right no-repeat;
+}
+@media only screen and (max-width: 400px) {
+  /* line 6, ../../blocks/products/_products.sass */
+  .products-message {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  /* line 6, ../../blocks/products/_products.sass */
+  .products-message {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 801px) {
+  /* line 6, ../../blocks/products/_products.sass */
+  .products-message {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    background: #f6f5ee url("../images/products__background.png") top right no-repeat;
+  }
+}
+
+/* line 19, ../../blocks/products/_products.sass */
+.products-message__inner {
+  margin: 2.5em 1.5em;
+}
+
+/* line 32, ../../blocks/products/_products.sass */
+.products__list {
+  background-image: url("../images/textures/light_background.png");
+}
+@media only screen and (max-width: 400px) {
+  /* line 32, ../../blocks/products/_products.sass */
+  .products__list {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  /* line 32, ../../blocks/products/_products.sass */
+  .products__list {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 801px) {
+  /* line 32, ../../blocks/products/_products.sass */
+  .products__list {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+/* line 44, ../../blocks/products/_products.sass */
+.products__item {
+  padding: 2.5em 0;
+}
+@media only screen and (max-width: 400px) {
+  /* line 44, ../../blocks/products/_products.sass */
+  .products__item {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  /* line 44, ../../blocks/products/_products.sass */
+  .products__item {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 801px) {
+  /* line 44, ../../blocks/products/_products.sass */
+  .products__item {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+/* line 67, ../../blocks/products/_products.sass */
+.product__image {
+  height: 225px;
+}
+
+/* line 80, ../../blocks/products/_products.sass */
+.product__tasting-notes {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #1e1e1e;
+  -webkit-box-shadow: 0 0 1px black;
+  -moz-box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px black;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+
+/* line 2, ../../blocks/quotes/_quotes.sass */
+.quote {
+  padding: 150px 15% 0 15%;
+  position: relative;
+  margin: 2.5em 0;
+  text-align: center;
+}
+
+/* line 11, ../../blocks/quotes/_quotes.sass */
 .quote p {
   display: inline;
   color: rgba(214, 163, 75, 0.8);
@@ -1072,15 +665,24 @@ em {
   box-shadow: 0 -6px 0 rgba(221, 221, 214, 0.4);
 }
 
+/* line 17, ../../blocks/quotes/_quotes.sass */
+.quote p:before {
+  content: "\201c";
+}
+
 /* line 20, ../../blocks/quotes/_quotes.sass */
+.quote p:after {
+  content: "\201d";
+}
+
+/* line 23, ../../blocks/quotes/_quotes.sass */
 .quote footer {
   text-align: right;
   padding: 5%;
 }
 
-/* line 24, ../../blocks/quotes/_quotes.sass */
+/* line 27, ../../blocks/quotes/_quotes.sass */
 .quote:after {
-  font-family: "icons";
   background: rgba(30, 30, 30, 0.8);
   width: 130px;
   height: 130px;
@@ -1092,588 +694,160 @@ em {
   text-align: center;
   top: 0px;
   left: 50%;
-  margin-left: -75px;
+  margin-left: -65px;
   color: rgba(214, 163, 75, 0.5);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
 }
 
-/* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .copyright__inner {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* line 6, ../../sass_lib/_helpers.sass */
-.products-message__inner, .tourism__media__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 6, ../../sass_lib/_helpers.sass */
-  .products-message__inner, .tourism__media__inner {
-    margin: 10% 10% 10% 10%;
-  }
-}
-
-/* line 10, ../../sass_lib/_helpers.sass */
-.products__list__inner, .tourism-message__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 10, ../../sass_lib/_helpers.sass */
-  .products__list__inner, .tourism-message__inner {
-    margin: 10% 10% 10% 10%;
-  }
-}
-
-/* line 4, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 7, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
-}
-
-/* line 10, ../../sass_lib/_typography.sass */
-.nav__text, .nav {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-}
-/* line 15, ../../sass_lib/_typography.sass */
-.nav__text .nav__link, .nav .nav__link {
-  color: #edeadc;
-}
-
-/* line 21, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
-  font-family: "Julius Sans One", sans-serif;
-  text-transform: uppercase;
-}
-/* line 26, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Julius Sans One", sans-serif;
-}
-/* line 30, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
-  color: #d6a34b;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 34, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  /* line 37, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 44, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 41.2px;
-  }
-  /* line 46, ../../sass_lib/_typography.sass */
-  .welcome-message__title:first-letter {
-    font-size: 70px;
-    letter-spacing: -4px;
-  }
-
-  /* line 50, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 20.6px;
-  }
-}
-/* line 56, ../../sass_lib/_typography.sass */
-.products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 28.8px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-  margin-bottom: 1em;
-}
-/* line 64, ../../sass_lib/_typography.sass */
-.products__text p, .products p, .tourism__text p, .tourism p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  line-height: 2em;
-  margin: 0.75em 0;
-  color: #75738b;
-}
-
-/* line 73, ../../sass_lib/_typography.sass */
-.product__text .product__name, .product .product__name {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-/* line 80, ../../sass_lib/_typography.sass */
-.product__text .product__ingredients, .product .product__ingredients {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 0.1;
-  text-indent: 1em;
-  color: #7f7d6f;
-}
-/* line 88, ../../sass_lib/_typography.sass */
-.product__text .product__type, .product .product__type {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 3.5em;
-  color: #75738b;
-}
-/* line 94, ../../sass_lib/_typography.sass */
-.product__text .product__tasting-notes, .product .product__tasting-notes {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-variant: bold;
-  color: #edeadc;
-}
-
-/* line 100, ../../sass_lib/_typography.sass */
-.footer__text, .footer {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 1.5em;
-  color: #6d6e71;
-}
-/* line 106, ../../sass_lib/_typography.sass */
-.footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 4em;
-  color: #dceadc;
-}
-/* line 113, ../../sass_lib/_typography.sass */
-.footer__text .copyright, .footer .copyright {
-  font-size: 12px;
-  color: #dceadc;
-}
-/* line 117, ../../sass_lib/_typography.sass */
-.footer__text .social a, .footer .social a {
-  color: #6d6e71;
-}
-
-/* line 122, ../../sass_lib/_typography.sass */
-.quote__text p, .quote p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 28px;
-  font-style: italic;
-  line-height: 46px;
-}
-/* line 128, ../../sass_lib/_typography.sass */
-.quote__text .author, .quote .author {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #d48158;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-
-/* line 137, ../../sass_lib/_typography.sass */
-.tourism__text .tourism__title, .tourism .tourism__title {
-  color: #2a2827;
-}
-/* line 139, ../../sass_lib/_typography.sass */
-.tourism__text .tourism-message p, .tourism .tourism-message p {
-  color: #f6f5ee;
-}
-/* line 142, ../../sass_lib/_typography.sass */
-.tourism__text figcaption, .tourism figcaption {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 14.4px;
-}
-
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/* line 13, ../../sass_lib/_flag.sass */
-.product {
-  display: table;
-  width: 100%;
-}
-/* line 17, ../../sass_lib/_flag.sass */
-.product .product__image, .product .product__info {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 31, ../../sass_lib/_flag.sass */
-.product .product__image > img {
-  display: block;
-  max-width: none;
-}
-/* line 35, ../../sass_lib/_flag.sass */
-.product .product__info {
-  width: 100%;
-}
-
-/* line 2, ../../sass_lib/_image.sass */
-.polaroids figure {
-  position: relative;
-}
-/* line 4, ../../sass_lib/_image.sass */
-.polaroids figure img {
-  width: 400px;
-  margin-bottom: 30px;
-  border: 10px solid white;
-  border-bottom: 30px solid white;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-}
-/* line 12, ../../sass_lib/_image.sass */
-.polaroids figure img, .polaroids figure figcaption {
-  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-  transform: rotate(-2deg);
-}
-
-/* line 22, ../../sass_lib/_image.sass */
-.polaroids figure:nth-child(even) img, .polaroids figure:nth-child(even) figcaption {
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  transform: rotate(2deg);
-}
-
-/* line 28, ../../sass_lib/_image.sass */
-.polaroids figcaption {
-  width: 400px;
-  position: absolute;
-  top: 18em;
-  text-align: center;
-}
-
-/* line 6, ../../blocks/tourism/_tourism.sass */
+/* line 2, ../../blocks/tourism/_tourism.sass */
 .tourism {
-  font-size: 0;
   overflow: hidden;
 }
 
-/* line 11, ../../blocks/tourism/_tourism.sass */
+/* line 6, ../../blocks/tourism/_tourism.sass */
 .tourism__media {
-  vertical-align: top;
   background: url("../images/textures/squared_metal.png");
 }
-
-/* line 18, ../../blocks/tourism/_tourism.sass */
-.tourism-message {
-  vertical-align: top;
-  background: #d6a34b url("../images/tourism__background.png") bottom left no-repeat;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 26, ../../blocks/tourism/_tourism.sass */
-  .tourism__media, .tourism-message {
-    padding: 10% 0;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 30, ../../blocks/tourism/_tourism.sass */
-  .tourism__media, .tourism-message {
-    width: 50%;
-    display: inline-block;
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-  }
-
-  /* line 35, ../../blocks/tourism/_tourism.sass */
+@media only screen and (max-width: 400px) {
+  /* line 6, ../../blocks/tourism/_tourism.sass */
   .tourism__media {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  /* line 6, ../../blocks/tourism/_tourism.sass */
+  .tourism__media {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 801px) {
+  /* line 6, ../../blocks/tourism/_tourism.sass */
+  .tourism__media {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
     margin-left: -100%;
   }
+}
 
-  /* line 37, ../../blocks/tourism/_tourism.sass */
+/* line 19, ../../blocks/tourism/_tourism.sass */
+.tourism-message__inner {
+  margin: 2.5em 1.5em;
+}
+
+/* line 22, ../../blocks/tourism/_tourism.sass */
+.tourism__media__inner {
+  margin: 0;
+}
+
+/* line 27, ../../blocks/tourism/_tourism.sass */
+figure {
+  position: relative;
+  line-height: 0;
+}
+/* line 30, ../../blocks/tourism/_tourism.sass */
+figure img {
+  width: 100%;
+}
+/* line 35, ../../blocks/tourism/_tourism.sass */
+figure figcaption {
+  width: 100%;
+  position: absolute;
+  top: 46%;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+/* line 43, ../../blocks/tourism/_tourism.sass */
+.tourism-message {
+  background: #d6a34b url("../images/tourism__background.png") bottom left no-repeat;
+}
+@media only screen and (max-width: 400px) {
+  /* line 43, ../../blocks/tourism/_tourism.sass */
   .tourism-message {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  /* line 43, ../../blocks/tourism/_tourism.sass */
+  .tourism-message {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 801px) {
+  /* line 43, ../../blocks/tourism/_tourism.sass */
+  .tourism-message {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
     margin-left: 50%;
-  }
-}
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/* line 3, ../../sass_lib/_helpers.sass */
-.nav__inner, .copyright__inner {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* line 6, ../../sass_lib/_helpers.sass */
-.products-message__inner, .tourism__media__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 6, ../../sass_lib/_helpers.sass */
-  .products-message__inner, .tourism__media__inner {
-    margin: 10% 10% 10% 10%;
+    background: #d6a34b url("../images/tourism__background.png") top left no-repeat;
   }
 }
 
-/* line 10, ../../sass_lib/_helpers.sass */
-.products__list__inner, .tourism-message__inner {
-  margin: 0 5% 0 5%;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 10, ../../sass_lib/_helpers.sass */
-  .products__list__inner, .tourism-message__inner {
-    margin: 10% 10% 10% 10%;
-  }
-}
-
-/* line 4, ../../sass_lib/_typography.sass */
-strong {
-  font-weight: 700;
-}
-
-/* line 7, ../../sass_lib/_typography.sass */
-em {
-  font-style: italic;
-}
-
-/* line 10, ../../sass_lib/_typography.sass */
-.nav__text, .nav {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-}
-/* line 15, ../../sass_lib/_typography.sass */
-.nav__text .nav__link, .nav .nav__link {
-  color: #edeadc;
-}
-
-/* line 21, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__title, .welcome-message .welcome-message__title {
-  font-family: "Julius Sans One", sans-serif;
-  text-transform: uppercase;
-}
-/* line 26, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line, .welcome-message .welcome-message__tag-line {
-  font-family: "Julius Sans One", sans-serif;
-}
-/* line 30, ../../sass_lib/_typography.sass */
-.welcome-message__text .welcome-message__tag-line strong, .welcome-message .welcome-message__tag-line strong {
-  color: #d6a34b;
-}
-
-@media only screen and (min-width: 20em) and (max-width: 40.062em) {
-  /* line 34, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  /* line 37, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 44, ../../sass_lib/_typography.sass */
-  .welcome-message__title {
-    font-size: 41.2px;
-  }
-  /* line 46, ../../sass_lib/_typography.sass */
-  .welcome-message__title:first-letter {
-    font-size: 70px;
-    letter-spacing: -4px;
-  }
-
-  /* line 50, ../../sass_lib/_typography.sass */
-  .welcome-message__tag-line {
-    font-size: 20.6px;
-  }
-}
-/* line 56, ../../sass_lib/_typography.sass */
-.products__text .products__title, .products .products__title, .products__text .tourism__title, .products .tourism__title, .tourism__text .products__title, .tourism .products__title, .tourism__text .tourism__title, .tourism .tourism__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 28.8px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-  margin-bottom: 1em;
-}
-/* line 64, ../../sass_lib/_typography.sass */
-.products__text p, .products p, .tourism__text p, .tourism p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  line-height: 2em;
-  margin: 0.75em 0;
-  color: #75738b;
-}
-
-/* line 73, ../../sass_lib/_typography.sass */
-.product__text .product__name, .product .product__name {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 19.2px;
-  text-transform: uppercase;
-  color: #2a2827;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-/* line 80, ../../sass_lib/_typography.sass */
-.product__text .product__ingredients, .product .product__ingredients {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 0.1;
-  text-indent: 1em;
-  color: #7f7d6f;
-}
-/* line 88, ../../sass_lib/_typography.sass */
-.product__text .product__type, .product .product__type {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 3.5em;
-  color: #75738b;
-}
-/* line 94, ../../sass_lib/_typography.sass */
-.product__text .product__tasting-notes, .product .product__tasting-notes {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 16px;
-  font-variant: bold;
-  color: #edeadc;
-}
-
-/* line 100, ../../sass_lib/_typography.sass */
-.footer__text, .footer {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 14.4px;
-  line-height: 1.5em;
-  color: #6d6e71;
-}
-/* line 106, ../../sass_lib/_typography.sass */
-.footer__text .postal-address__title, .footer .postal-address__title, .footer__text .contact-point__title, .footer .contact-point__title, .footer__text .social__title, .footer .social__title {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 4em;
-  color: #dceadc;
-}
-/* line 113, ../../sass_lib/_typography.sass */
-.footer__text .copyright, .footer .copyright {
-  font-size: 12px;
-  color: #dceadc;
-}
-/* line 117, ../../sass_lib/_typography.sass */
-.footer__text .social a, .footer .social a {
-  color: #6d6e71;
-}
-
-/* line 122, ../../sass_lib/_typography.sass */
-.quote__text p, .quote p {
-  font-family: "Libre Baskerville", sans-serif;
-  font-size: 28px;
-  font-style: italic;
-  line-height: 46px;
-}
-/* line 128, ../../sass_lib/_typography.sass */
-.quote__text .author, .quote .author {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #d48158;
-  text-shadow: 0px 0px 1px #aaaaaa;
-}
-
-/* line 137, ../../sass_lib/_typography.sass */
-.tourism__text .tourism__title, .tourism .tourism__title {
-  color: #2a2827;
-}
-/* line 139, ../../sass_lib/_typography.sass */
-.tourism__text .tourism-message p, .tourism .tourism-message p {
-  color: #f6f5ee;
-}
-/* line 142, ../../sass_lib/_typography.sass */
-.tourism__text figcaption, .tourism figcaption {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 14.4px;
-}
-
-/* line 15, ../../blocks/footer/_footer.sass */
+/* line 4, ../../blocks/footer/_footer.sass */
 .footer {
   background-color: #1e1e1e;
 }
-/* line 19, ../../blocks/footer/_footer.sass */
+/* line 8, ../../blocks/footer/_footer.sass */
 .footer > * {
   text-align: center;
 }
 
-/* line 24, ../../blocks/footer/_footer.sass */
-.postal-address {
-  display: inline-block;
-  width: 33%;
-  padding: 2% 5% 2% 15%;
+/* line 13, ../../blocks/footer/_footer.sass */
+.postal-address, .contact-point, .social, .faq {
+  padding: 2% 5% 2% 5%;
+}
+@media only screen and (max-width: 400px) {
+  /* line 13, ../../blocks/footer/_footer.sass */
+  .postal-address, .contact-point, .social, .faq {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  /* line 13, ../../blocks/footer/_footer.sass */
+  .postal-address, .contact-point, .social, .faq {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 801px) {
+  /* line 13, ../../blocks/footer/_footer.sass */
+  .postal-address, .contact-point, .social, .faq {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+  }
 }
 
-/* line 29, ../../blocks/footer/_footer.sass */
-.contact-point {
-  display: inline-block;
-  vertical-align: top;
-  width: 33%;
-  padding: 2%;
-}
-
-/* line 36, ../../blocks/footer/_footer.sass */
-.social {
-  display: inline-block;
-  vertical-align: top;
-  width: 33%;
-  padding: 2% 15% 2% 5%;
-}
-
-/* line 42, ../../blocks/footer/_footer.sass */
-.social__icon {
+/* line 23, ../../blocks/footer/_footer.sass */
+.social__icon, .faq__icon {
   width: 40px;
   height: 40px;
   vertical-align: middle;
   margin-left: 10px;
 }
 
-/* line 48, ../../blocks/footer/_footer.sass */
+/* line 29, ../../blocks/footer/_footer.sass */
 .copyright {
   background: url("../images/textures/granular.png");
   border-top: 1px solid black;
 }
 
-/* line 52, ../../blocks/footer/_footer.sass */
+/* line 33, ../../blocks/footer/_footer.sass */
 .copyright__inner {
   padding: 1em 0;
   text-align: right;
-}
-
-/* line 16, ../../blocks/main.sass */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 19, ../../blocks/main.sass */
-a {
-  text-decoration: none;
 }

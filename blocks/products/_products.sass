@@ -1,59 +1,92 @@
-@import '../../sass_lib/helpers'
-@import '../../sass_lib/typography'
-@import '../../sass_lib/flag'
-
-
 .products
   @extend .products__text
-  font-size: 0
-  overflow: hidden
+  +row
+
 
 .products-message
-  background: #f6f5ee url('../images/products__background.png') bottom right no-repeat
-  vertical-align: top
+  background: $secondary-color--very-soft url('../images/products__background.png') bottom right no-repeat
+  
+  +at-breakpoint(palm)
+    +column
+
+  +at-breakpoint(lap)
+    +column
+
+  +at-breakpoint(desk)
+    +column(50%, true)
+    background: $secondary-color--very-soft url('../images/products__background.png') top right no-repeat
 
 .products-message__inner
-  @extend %left
 
-.products__list  
+  margin: 2.5em 1.5em
+
+  //+at-breakpoint(palm)
+  //  margin: 5%
+
+  //+at-breakpoint(lap)
+  //  margin: 5%
+
+  //+at-breakpoint(desk)
+  //  margin: 15%
+
+.products__list 
   background-image: url('../images/textures/light_background.png')
-  vertical-align: top
+  
+  +at-breakpoint(palm)
+    +column
 
-.products__list__inner
-  @extend %right
+  +at-breakpoint(lap)
+    +column
 
-+at_breakpoint(palm)
-  .products-message, .products__list
-    padding: 10% 0
+  +at-breakpoint(desk)
+    +column(50%)
 
-+at_breakpoint(desk)
-  .products-message, .products__list
-    width: 50%
-    display: inline-block
-    margin-bottom: -99999px  //the background disapear cause the same height colums fix
-    padding-bottom: 99999px
+.products__item
+  padding: 2.5em 0
+  +at-breakpoint(palm)
+    width: 100%
+    margin: 0
+  +at-breakpoint(lap)
+    width: 80%
+    margin: 0 auto
+  +at-breakpoint(desk)
+    width: 75%
+    margin: 0 auto
+
+//.products__list__inner
+  //@extend %right
 
 .product
-  @extend %flag
   @extend .product__text
-  margin-bottom: 1em
+  @extend %flag
+  //margin-bottom: 3em 
+  //margin: 0 1.5em
+  +at-breakpoint(palm)
+    //text-align: center
 
 .product__image
+  height: 225px
+  //+at-breakpoint(desk)
   @extend %flag__mast
+  //+at-breakpoint(palm)
+    //display: block
+    //margin: 0 auto
 
 .product__info
+  //+at-breakpoint(desk)
   @extend %flag__banner
-  padding-left: 1em
+  //padding-left: 1em
 
 .product__tasting-notes 
   
   display: inline-block
-  text-decoration: none
-  padding: 7px 14px
+  //text-decoration: none
+  padding: 0.5em 1em
   background: #1e1e1e
-  box-shadow: 0 0 1px #000
+  +single-box-shadow(#000, 0, 0, 1px)
+  +border-radius(25px)
 
 .product__tasting-notes:hover
-  box-shadow: 0 0 5px #000
+  //box-shadow: 0 0 5px #000
 
 

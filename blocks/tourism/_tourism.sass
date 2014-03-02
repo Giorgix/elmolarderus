@@ -1,38 +1,58 @@
-@import '../../sass_lib/helpers'
-@import '../../sass_lib/typography'
-@import '../../sass_lib/flag'
-@import '../../sass_lib/image'
 
 .tourism
   @extend .tourism__text
-  font-size: 0
-  overflow: hidden
+  +row
 
 .tourism__media
-  vertical-align: top
   background: url('../images/textures/squared_metal.png')
+  
+  +at-breakpoint(palm)
+    +column
+
+  +at-breakpoint(lap)
+    +column
+
+  +at-breakpoint(desk)
+    +column(50%)
+    margin-left: -100%
+
+.tourism-message__inner
+  margin: 2.5em 1.5em
 
 .tourism__media__inner
   @extend %left
+  margin: 0
+
+
+figure
+  position: relative
+  line-height: 0
+  img
+    width: 100%
+    //margin-bottom: 1em
+    //width: 400px//only width if the img is wider than taller and only height if the opposite to preserve ratio.
+  
+  figcaption
+    width: 100%
+    position: absolute
+    //bottom: 0
+    top: 46%
+    background-color: rgba(30, 30, 30, 0.5)
+    //@extend %flag__banner
 
 .tourism-message
-  vertical-align: top
-  background: #d6a34b url('../images/tourism__background.png') bottom left no-repeat
+  background: $tertiary-color url('../images/tourism__background.png') bottom left no-repeat
+
+  +at-breakpoint(palm)
+    +column
+
+  +at-breakpoint(lap)
+    +column
+
+  +at-breakpoint(desk)
+    +column(50%, true)
+    margin-left: 50%
+    background: $tertiary-color url('../images/tourism__background.png') top left no-repeat
 
 .tourism-message__inner
   @extend %right
-
-+at_breakpoint(palm)
-  .tourism__media, .tourism-message
-    padding: 10% 0
-
-+at_breakpoint(desk)
-  .tourism__media, .tourism-message
-    width: 50%
-    display: inline-block
-    margin-bottom: -99999px
-    padding-bottom: 99999px
-  .tourism__media
-    margin-left: -100%
-  .tourism-message
-    margin-left: 50%

@@ -1,39 +1,54 @@
 // layout helpers
 
+
+=row
+  overflow: hidden
+  //width: 100%
+
+=column($width: 100%, $equal-height: false)
+  display: inline-block
+  vertical-align: top
+  width: $width
+  
+  @if $equal-height
+    +equal-height
+
+=equal-height
+  margin-bottom: -99999px  //the background disapear cause the same height colums fix
+  padding-bottom: 99999px
+
+
+=center($width)
+  margin: 0 auto
+
+=left($margin)
+  margin: $margin
+  
+
 %center
   width: 90%
   margin: 0 auto
+
 %left
-  margin: 0 5% 0 5%
-  +at_breakpoint(desk)
-    margin: 10% 10% 10% 10%
+  margin: 10%
+
 %right
-  margin: 0 5% 0 5%
-  +at_breakpoint(desk)
-    margin: 10% 10% 10% 10%
+  margin: 10%
 
 
 // collections
-@mixin collection--align-justify
-  text-align: justify
-  font-size: 0
 
-  &:after
-    content: " "
-    width: 100%
-    display: inline-block
-
-  & %collection__item
-    display: inline-block
-    font-size: 16px
-    
-%collection--align-justify
-  +collection--align-justify
-
-%collection--align-right
-  text-align: right
-  font-size: 0
+=collection($align: left)
+  text-align: $align
   
-  & %collection__item
+  >[class$="__item"] 
     display: inline-block
-    font-size: 16px
+
+  @if $align == justify
+    &:after
+      content: ""
+      width: 100%
+      display: inline-block
+
+
+

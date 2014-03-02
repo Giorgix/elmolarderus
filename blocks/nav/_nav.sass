@@ -1,28 +1,40 @@
-@import '../../sass_lib/helpers'
-@import '../../sass_lib/typography'
-
 .nav
-  background-color: #1e1e1e
+  background-color: $primary-color--very-loud
   border-bottom: 3px solid black
-  @extend .nav__text
-  width: 100%
-+at_breakpoint(palm)
-  .nav
-    padding-top: 200px
-  .nav__list
-    text-align: center
+  line-height: 0
 
 .nav__inner
-  @extend %center
+  padding: 0 2%
+
+  //+at-breakpoint(lap)
+  //  margin: 5%
+
+  //+at-breakpoint(desk)
+  //  margin: 15%
 
 .nav__list
-  +at_breakpoint(desk)
-    +collection--align-justify
+  +at-breakpoint(palm)
+    +collection(center)
+
+  +at-breakpoint(lap)
+    +collection(center)
+
+  +at-breakpoint(desk)
+    +collection(justify)
     margin-left: 180px
+  /*
+   * offset for logo, this must be equal
+   * to the width of logo in order to
+   * avoid the logo overlap the nav items
+   */
+  //margin-left: 180px
 
 .nav__item
-  @extend %collection__item
-  padding: 1.5em 1em
+  @extend .nav__text
+  //padding: 1.5em 1em
+
+  //+at-breakpoint(palm)
+  padding: 0.5em
 
 
 .nav__link:hover

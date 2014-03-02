@@ -1,28 +1,31 @@
-@import '../../sass_lib/typography'
 
 .quote
-  @extend .quote__text
-  padding: 150px 20% 0 20% 
+  @extend .quote__text 
+  //padding-top: 150px
+  padding: 150px 15% 0 15%
   position: relative
-  margin-top: 15%
-
-+at_breakpoint(palm)
-  .quote
-    padding: 150px 10% 0 10%
+  //margin-top: 15%
+  margin: 2.5em 0
+  text-align: center
 
 .quote p
-  //background: rgba(255,255,255,0.5)
   display: inline
   color: rgba(214,163,75,0.8)
   text-shadow: 0 1px 1px rgba(255,255,255,0.5)
   box-shadow: 0 -6px 0 rgba(221,221,214,0.4)
+
+.quote p:before
+  content: '\201c'
+
+.quote p:after
+  content: '\201d'
 
 .quote footer
   text-align: right
   padding: 5%
 
 .quote:after
-  font-family: 'icons'
+  //font-family: 'icons'
   background: rgba(30,30,30,0.8)
   width: 130px
   height: 130px
@@ -34,7 +37,7 @@
   text-align: center
   top: 0px
   left: 50%
-  margin-left: -75px
+  margin-left: -65px
   //margin-left: -65px
   color: rgba(214,163,75,0.5)
   text-shadow: 0 1px 1px rgba(255,255,255,0.1)

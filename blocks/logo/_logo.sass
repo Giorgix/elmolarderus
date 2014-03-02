@@ -1,31 +1,17 @@
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *-------------------------------------------------------------------*/
-
 .logo
-  display: block
-  position: absolute
-  top: 0
-  z-index: 99999
-
-+at_breakpoint(palm)
-  .logo  
-    margin-left: -90px
-    left: 50%
-
-+at_breakpoint(desk)
-  .logo
-    left: 5%
+  background-color: $primary-color--very-loud
+  +at-breakpoint(palm)
+    margin: 0 auto
+  +at-breakpoint(desk)
+    background-color: transparent
+    display: block
+    position: absolute
+    left: 2%
+    top: 0
+    z-index: 99999
 
 .logo__image 
   height: 180px
   width: 180px
-
+  margin: 0 auto
+  display: block

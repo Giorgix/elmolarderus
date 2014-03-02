@@ -1,32 +1,33 @@
-.polaroids 
-  figure
-    position: relative
-    img
-      width: 400px
-      margin-bottom: 30px
-      border: 10px solid #ffffff
-      border-bottom: 30px solid #FFFFFF
-      -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25)
-      -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25)
-      box-shadow: 0 3px 6px rgba(0,0,0,.25)
-    img, figcaption
-      -webkit-transform: rotate(-2deg)
-      -moz-transform: rotate(-2deg)
-      transform: rotate(-2deg)
+.polaroids figure
+  position: relative
+
+.polaroids figure img
+  margin-bottom: 30px
+  border: 10px solid #ffffff
+  border-bottom: 30px solid #FFFFFF
+  +at-breakpoint(palm)
+    width: 100%
+
 
 //.polaroids figure:last-child img
   margin-bottom: 0
 
-.polaroids 
-  figure:nth-child(even)
-    img, figcaption 
-      -webkit-transform: rotate(2deg)
-      -moz-transform: rotate(2deg)
-      transform: rotate(2deg)
+.polaroids figure img, .polaroids figure figcaption  
+  -webkit-transform: rotate(-2deg)
+  -moz-transform: rotate(-2deg)
+  transform: rotate(-2deg)
 
-.polaroids 
-  figcaption
-    width: 400px
-    position: absolute   
-    top: 18em
-    text-align: center
+.polaroids figure:nth-child(even) img, .polaroids figure:nth-child(even) figcaption 
+  -webkit-transform: rotate(2deg)
+  -moz-transform: rotate(2deg)
+  transform: rotate(2deg)
+
+.polaroids figure img
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25)
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25)
+  box-shadow: 0 3px 6px rgba(0,0,0,.25)
+     
+.polaroids figcaption
+  position: absolute   
+  left: 40%
+  top: 75%
