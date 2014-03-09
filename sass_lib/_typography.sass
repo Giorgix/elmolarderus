@@ -1,190 +1,98 @@
-@function strip-unit($number) 
-  @return $number / ($number * 0 + 1)
+@import 'font_face'
 
-@function adjust-to-line-height($font-size, $baseline: $baseline, $baseline-ratio: 1)
-  
-  $lh: $font-size * $baseline-ratio
-  $m: 1
-  $limit: 1000
-  @while $m < $limit
-    @if ($baseline * $m) >= $lh
-      $baseline: ($baseline * $m)
-      $m: $limit
-    @else
-      $m: $m + 1
-
-  @return (strip-unit($baseline) / strip-unit($font-size))
- 
-
-=font($size: $base-font-size, $family: $primary-font, $baseline-ratio: 1)
-  +font-size($size)
-  line-height: adjust-to-line-height($size, $baseline-ratio: $baseline-ratio)
+=font($size: $BASE-FONT-SIZE, $family: $FONT-PRIMARY, $line-height: $BASE-LINE-HEIGHT, $line-height-ratio: $BASE-LINE-HEIGHT-RATIO)
+  font-size: px-to-rem($size)
+  $line-height: adjust-line-height-to($size, $line-height, $line-height-ratio)
+  line-height: px-to-ul($line-height, $context: $size)
   font-family: $family
 
-=font-size($size)
-  // fallback for IE8 or any browser
-  // without rem support.
-  font-size: $size
-  font-size: #{($size / $base-font-size)}rem
-
-
 html
-  line-height: 1.5
-  +at-breakpoint(palm)
-    font-size: 14px
-  
-  +at-breakpoint(lap)
-    font-size: 14px
-  
-  +at-breakpoint(desk)
-    font-size: 16px
+  font-size: 87.5%
 
-.nav__text
-  +font(16px, $secondary-font)
+=txt-1
+  +font
+
+=txt-2
+  +font($size: 18px)
+  font-style: italic
+
+=txt-3
+  +font($family: $FONT-SECONDARY)
+
+=inl-1
+  +font($size: 12px, $family: $FONT-SECONDARY)
+  text-transform: uppercase
+  //font-variant: small-caps
+
+=inl-2
+  +font($size: 12px)
+
+=inl-3
+  +font($size: 14px, $family: $FONT-SECONDARY)
+  font-variant: small-caps
+
+=inl-4
+  +font($size: 12px)
+  font-weight: bold
+
+=inl-5
+  +font($size: 12px)
+  font-style: italic
+
+=inl-6
+  +font($size: 21px, $line-height: 1)
+  font-style: italic
+  text-transform: lowercase
+
+=inl-7
+  +font($size: 12px, $family: $FONT-SECONDARY)
   font-weight: 300
-  text-transform: capitalize
-  
-  .nav__link
-    color: $primary-color--very-soft
 
+=inl-8
+  +font($size: 14px, $family: $FONT-SECONDARY) 
 
-.welcome-message__text
-  white-space: pre-wrap
-  & .welcome-message__title
-    +font(36px, $secondary-font)
-    font-weight: 300
-    text-transform: uppercase
-    color: $tertiary-color--very-soft
-    //+text-shadow
+=head-1
+  +font($size: 21px, $family: $FONT-SECONDARY, $line-height: 1.2)
 
-  & .welcome-message__tag-line
-    +font(18px, $secondary-font)
-    font-weight: 300
-    color: $tertiary-color--very-soft
-    //font-style: italic
-    //+text-shadow
-  strong
-    font-size: 130%
-    +font--regular
-    color: $primary-color--very-soft
-  & .charM
-    color: $tertiary-color
-  & .charY, .charEN
-    font-size: 60%
-    line-height: 2
-    text-transform: lowercase 
-  //effect like in PS
-  //+at-breakpoint(desk)
-    white-space: normal
-    .charEN
-      position: absolute
-      left: -30px
-      top: 18px
-    b
-      white-space: pre
-    .welcome-message__tag-line b
-      padding-left: 20%
+=head-2
+  +font($family: $FONT-SECONDARY)
+  text-transform: uppercase
 
-.products__text, .tourism__text
-
-  & .products__title, .tourism__title
-    font-weight: 300
-    //line-height: 1
-    letter-spacing: 2px 
-    +font(24px, $secondary-font, 1.5)
-    text-transform: uppercase
-    color: $primary-color--very-loud
-    +text-shadow
-    //margin-bottom: 1em
-
-  & p
-    +font(16px)
-    //line-height: 2em
-    margin: 0.75em 0
-    color: $primary-color
-
-.product__text
-  
-  & .product__name
-    +font(21px, $secondary-font)
-    text-transform: uppercase
-    color: $primary-color--very-loud
-    //font-weight: 300
-    +text-shadow
-
-  & .product__ingredients
-    +font(16px)
-    font-style: italic
-    //line-height: 0.1 //21px before
-    //text-indent: 1em
-    color: $primary-color
-
-  & .product__type
-    //text-transform: uppercase
-    +font(18px, $secondary-font)
-    //line-height: 3.5em
-    color: $primary-color--very-loud
-
-  & .product__tasting-notes
-    +font(16px)
-    font-variant: bold
-    color: $primary-color--very-soft
-
-.footer__text
-  +font(14px, $secondary-font)
+=head-3
+  +font($size: 36px, $family: $FONT-SECONDARY)
   font-weight: 300
-  color: $primary-color
 
-  .postal-address__title, .contact-point__title, .social__title, .faq__title
-    +font(16px, $secondary-font, 2)
-    font-weight: 400
-    text-transform: uppercase
-    //line-height: 3
-    color: $primary-color--very-soft
+=head-4
+  +font($size: 36px, $family: $FONT-SECONDARY)
+  text-transform: uppercase
 
-  .copyright
-    +font(12px, $secondary-font)
-    color: $primary-color--very-soft
+=head-5
+  +font($size: 21px, $family: $FONT-SECONDARY, $line-height: 1)
+  font-weight: 300
 
-  .social, .faq 
-    a
-      color: $primary-color
+=head-6
+  +font($size: 21px, $family: $FONT-PRIMARY, $line-height: 1.2)
+  font-style: italic
 
+=nav-1
+  +font($size: 12px, $family: $FONT-SECONDARY, $line-height: 2)
+  text-transform: uppercase
+  //font-weight: 600
 
-.quote__text
-  p
-    +font(24px, $baseline-ratio: 1.5)
-    font-style: italic
-    //line-height: 46px
+=font--light
+  font-weight: 300
 
-  .author
-    +font(18px)
-    //font-weight: 700
-    text-transform: capitalize
-    color: $primary-color
-    +text-shadow
-
-.tourism__text
+=emph-1
+  font-weight: 400
   
-  .tourism__title
-    color: $primary-color--very-loud
-  .tourism-message p
-    color: $secondary-color--very-soft
+=emph-2
+  font-style: italic
+  
+=emph-3
+  font-weight: 700
 
-  figcaption
-    +font(18px, $secondary-font)
-    font-weight: 300
-    text-transform: uppercase
-    color: $secondary-color--very-soft
-    text-align: center
-
-strong
-  +font--bold
-em
-  +font--italic
-
-[data-icon]:before 
-  +font(16px, icons)
-  line-height: 1 
-  content: " " attr(data-icon)
-  speak: none // Not to be trusted, but hey.
+=emph-4
+  //font-weight: 700
+  font-size: 150%
+  letter-spacing: -2px
+ 

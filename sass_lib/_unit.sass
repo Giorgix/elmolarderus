@@ -1,13 +1,24 @@
-/*------------------------------------------------------------------
- * [Unit related functions Stylesheet]
- *
- * Project:	Zilean
- * Version:	0.1
- * Last change:	18/11/13 
- * Author:	twissell
- * Primary use:	Zilean framework
- *-------------------------------------------------------------------*/
-
-// thx to eric meyer
-@function strip-units($number)
+/*
+ * removes the unit of a given
+ * number if have any, returns
+ * the original number without 
+ * the unit.
+ */
+@function strip-unit($number) 
   @return $number / ($number * 0 + 1)
+
+@function px-to-em($pixels, $context: 14px)
+  $ems: strip-unit($pixels / $context)
+  @return #{$ems}em
+
+@function em-to-px($ems, $context: 14px)
+  $pixels: strip-unit($context) * strip-unit($ems)
+  @return #{$pixels}px
+
+@function px-to-rem($pixels, $context: 14px)
+  $rem: strip-unit($pixels / $context)
+  @return #{$rem}rem
+
+@function px-to-ul($pixels, $context: 14px)
+  @return strip-unit($pixels / $context)
+

@@ -1,20 +1,1058 @@
 // compass imports
 
 @import 'compass/css3'
+@import 'compass/reset'
+
 
 // global imports
-
-@import '../sass_lib/reset'
 @import '../sass_lib/config'
-@import '../sass_lib/at_breakpoint'
-@import '../sass_lib/font_face'
-@import '../sass_lib/helpers'
-@import '../sass_lib/flag'
+@import '../sass_lib/unit'
+@import '../sass_lib/vr'
 @import '../sass_lib/typography'
+@import '../sass_lib/flag'
+@import '../sass_lib/justify'
+@import '../sass_lib/grid'
+@import '../sass_lib/at_breakpoint'
+@import '../sass_lib/decorators'
+@import '../sass_lib/recaptcha'
+@import 'contact/contact-form'
 
-// site imports
+/*********************************************
+ *
+ * RESET
+ *
+ *********************************************/
 
-@import 'page/page'
-@import 'home/home'
+*
+  +box-sizing(border-box)
+
+a
+  text-decoration: none
+  color: inherit
+ 
+
+html
+  
+  +at-breakpoint(desk)
+    font-size: 100%
+  
+  +at-breakpoint(hd)
+    font-size: 137.5%
+
+/*********************************************
+ *
+ * HEADER
+ *
+ *********************************************/
+
+.header
+  /**** background ****/
+  background-color: $COLOR-SECONDARY
+
+  /**** layout ****/
+  position: relative
+
+/*********************************************
+ *
+ * LOGO
+ *
+ *********************************************/
+
+.logo
+
+  /**** layout ****/
+  +at-breakpoint(palm) 
+    text-align: center
+  
+  +at-breakpoint(lap)
+    text-align: left
+    position: absolute
+    z-index: 99999
+
+.logo__image
+  height: px-to-rem(147px)
+
+/*********************************************
+ *
+ * NAV
+ *
+ *********************************************/
+
+.nav
+  
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+.nav--position-inside
+  
+  +at-breakpoint(lap)
+    padding-left: px-to-rem(147px)
+  
+.nav__list
+  
+  /**** layout ****/
+  +at-breakpoint(palm)
+    text-align: center
+
+  +at-breakpoint(lap)
+    text-align: left
+  
+  +at-breakpoint(desk)
+    +collection(justify)
+
+.nav__item
+  
+  /**** typography ****/
+  +nav-1
+  
+  /**** spacers ****/
+  margin: 1rem
+
+  /**** layout ****/
+  +collection__item
+
+/*********************************************
+ *
+ * TAGLINE
+ *
+ *********************************************/
+
+.tagline
+
+  /**** typography ****/
+  +at-breakpoint(palm)  
+    text-align: center
+
+  /**** background ****/
+  background-image: url("../images/tagline__background.jpg")
+
+  /**** layout ****/
+  position: relative
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.tagline h2
+
+  /**** typography ****/
+  +head-3
+
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+.tagline p
+
+  /**** typography ****/
+  +head-5
+  
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+.tagline strong
+  +emph-1
+
+.word_y
+
+  /**** typography ****/
+  +inl-6
+
+  /**** layout ****/
+  display: block
+
+  +at-breakpoint(desk)
+    display: inline
+
+.word_en
+  
+  /**** typography ****/
+  +inl-6
+
+  /**** layout ****/
+  display: block
+
+
+.word_manchuela
+
+  /**** typography ****/
+  +head-4
+
+.word_m
+
+  /**** foreground ****/
+  color: $COLOR-PRIMARY
+  
+
+/*********************************************
+ *
+ * TITLE
+ *
+ *********************************************/
+
+.title
+
+  /**** typography ****/
+  +at-breakpoint(palm)  
+    text-align: center
+
+  /**** background ****/
+  background-image: url("../images/tagline__background.jpg")
+
+  /**** layout ****/
+  position: relative
+
+  /**** spacers ****/
+  //padding: 1.5rem
+
+.title h2
+
+  /**** typography ****/
+  +head-3
+  padding: px-to-rem(88px) 0
+
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+
+/*********************************************
+ *
+ * PRODUCTS_EXCERPT
+ *
+ *********************************************/
+
+.products_excerpt
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    overflow: hidden
+
+.products_excerpt__text
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+    +equal-height
+
+.products_excerpt__text--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.products_excerpt__text p
+
+  /**** typography ****/
+  +txt-3
+
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.products_excerpt__text strong
+  +emph-3
+
+.products_excerpt__text em
+  +emph-2
+
+.products_excerpt__title
+  
+  /**** typography ****/
+  +head-6
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+
+.products_excerpt__title:first-letter
+  +emph-4
+
+.products_excerpt__list
+  
+  /**** background ****/
+  background-image: url('../images/textures/light_background.png')
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+    +equal-height
+
+.products_excerpt__list--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+/*********************************************
+ *
+ * PRODUCT_EXCERPT
+ *
+ *********************************************/
+
+.product_excerpt
+  
+  /**** typography ****/
+  +at-breakpoint(palm)
+    text-align: center
+
+  +at-breakpoint(lap)
+    text-align: left
+    +flag
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.product_excerpt__image
+  
+  height: px-to-em(168px) 
+
+  +at-breakpoint(lap)
+    +flag__mast
+
+.product_excerpt__info
+  
+  +at-breakpoint(lap)
+    +flag__banner
+
+.product_excerpt__name
+  
+  /**** typography ****/
+  +inl-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product_excerpt__year
+  
+  /**** typography ****/
+  +inl-5
+  
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+
+.product_excerpt__ingredients
+  
+  /**** typography ****/
+  +inl-2
+
+  /**** foreground ****/
+  color: $COLOR-PRIMARY
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product_excerpt__type
+  
+  /**** typography ****/
+  +inl-3
+
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product_excerpt__tasting_notes
+  
+  /**** typography ****/
+  +inl-4
+
+  /**** background ****/
+  background-color: $COLOR-SECONDARY
+
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+  /**** layout ****/
+  display: inline-block
+
+  /**** container ****/
+  +single-box-shadow(#000000, 0, 0, 2px)
+  +border-radius(5px)
+
+  /**** spacers ****/
+  padding: 0.5rem
+  margin-bottom: 0.5rem
+  
+  /**** state ****/
+  &:hover
+    //box-shadow: 0 0 5px #000 add in bp
+
+/*********************************************
+ *
+ * QUOTE
+ *
+ *********************************************/
+
+.quote
+
+  /**** typography ****/
+  +at-breakpoint(palm)  
+    text-align: center
+
+  /**** spacers ****/
+  padding-top: 150px 
+  margin-top: 6rem 
+  margin-bottom: 1.5rem 
+  /**** layout ****/
+  position: relative
+
+.quote:after
+  
+  content: '\275e'
+
+  /**** typography ****/
+  font-size: 70px
+  line-height: 130px
+  text-align: center
+
+  /**** layout ****/
+  position: absolute
+  width: 130px
+  height: 130px
+  top: 0
+  left: 65px
+
+  +at-breakpoint(palm)
+    left: 50%
+
+
+  /**** spacers ****/
+  margin-left: -65px
+
+  /**** container ****/
+  border-radius: 50%
+  
+  /**** background ****/
+  background-color: $COLOR-SECONDARY
+  
+  /**** foreground ****/
+  color: $COLOR-PRIMARY
+
+.quote p
+  
+  /**** typography ****/
+  +txt-2
+
+  /**** foreground ****/
+  color: $COLOR-PRIMARY
+
+  /**** container ****/
+  border-top: 2px solid $COLOR-QUATERNARY--SOFT
+
+  /**** layout ****/
+  display: inline
+
+  &:before
+    content: '\201c'
+
+  &:after
+    content: '\201d'
+
+.quote__footer
+
+  /**** typography ****/
+  +at-breakpoint(palm)  
+    text-align: right
+
+.quote__author
+
+  /**** typography ****/
+  +inl-1
+  
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+
+
+/*********************************************
+ *
+ * TOURISM_EXCERPT
+ *
+ *********************************************/
+
+.tourism_excerpt 
+
+  /**** background ****/
+  background-color: $COLOR-PRIMARY
+
+.tourism_excerpt__text p
+
+  /**** typography ****/
+  +txt-3
+
+  /**** background ****/
+  color: $COLOR-TERTIARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.tourism_excerpt__text strong
+  +emph-3
+
+.tourism_excerpt__text em
+  +emph-2
+
+.tourism_excerpt__body
+
+  /**** spacers ****/
+  padding: 1.5rem
+  
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+    
+
+.tourism_excerpt__title
+  
+  /**** typography ****/
+  +head-6
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+ 
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.tourism_excerpt__title:first-letter
+  +emph-4
+
+.tourism_excerpt__image
+  
+  /**** spacers ****/
+  padding: 1.5rem
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+
+.tourism_excerpt__image img
+  width: 100%
+
+
+/*********************************************
+ *
+ * FOOTER
+ *
+ *********************************************/
+
+.footer
+  
+  /**** background ****/
+  background-color: $COLOR-SECONDARY
+
+.footer__info
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+
+  +at-breakpoint(desk)
+    +column(25%)
+
+.footer__info p
+  
+  /**** typography ****/
+  +txt-3
+  
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+.footer__info  h4
+  
+  /**** typography ****/
+  +head-2
+
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+
+.copyright
+  
+  /**** spacers ****/
+  padding: 1.5rem
+
+  /**** background ****/
+  background-image: url("../images/textures/granular.png")
+
+  /**** layout ****/
+  text-align: right
+
+.copyright p
+  
+  /**** typography ****/
+  +inl-3
+
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+  
+/*********************************************
+ *
+ * CONTACT
+ *
+ *********************************************/
+
+.contact
+
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+.contact__form
+
+  width: 100%
+
+  /*****spacers*****/
+  padding: 5% 10%
+  
+.contact__form label
+  +head-5 
+
+.contact__form input
+  +txt-3
+
+.contact__form textarea
+  +txt-3
+
+.flash 
+  /******background****/
+  background-color: #FBB0B0
+  
+  /******spacers*****/
+  padding: 10px
+  
+  width: 90%
+
+.form__title
+
+  /**** typography ****/
+  +head-6
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.form__success_message
+  /**** spacers ****/
+  padding: 1.5rem
+  
+  /**** typography ****/
+  +head-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+/*********************************************
+ *
+ * TOURISM
+ *
+ *********************************************/
+
+.tourism__text.casa 
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+.tourism__text.entorno 
+    
+  /**** background ****/
+  background-color: $COLOR-QUINARY
+
+.tourism__text.actividades 
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+
+.tourism__text--position-inside
+
+  /**** spacers ****/
+  //padding: 1.5rem
+
+.tourism__text p
+
+  /**** typography ****/
+  +txt-3
+
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.tourism__text strong
+  +emph-3
+
+.tourism__text em
+  +emph-2
+
+.tourism__text hr
+  +hr--icon(3rem)
+
+.tourism__image
+
+  padding: 1.5rem
+
+  +at-breakpoint(lap)
+    +column
+
+.tourism__image img
+
+  width: 100% 
+
+.tourism__body
+
+  padding: 1.5rem
+
+  +at-breakpoint(lap)
+    +column
+
+.tourism__title
+  
+  /**** typography ****/
+  +head-6
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.tourism__title:first-letter
+  +emph-4
+
+
+/*********************************************
+ *
+ * ABOUT
+ *
+ *********************************************/
+
+.about__text
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+.about__text--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.about__title
+  
+  /**** typography ****/
+  +head-6
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+
+.about__title:first-letter
+  +emph-4
+
+
+.about__text
+  p
+
+    /**** typography ****/
+    +txt-3
+
+    /**** foreground ****/
+    color: $COLOR-QUATERNARY
+
+    /**** spacers ****/
+    margin-bottom: 1.5rem
+
+
+.about__text strong
+  +emph-3
+
+.about__text em
+  +emph-2
+
+.owner
+  text-align: right
+  +inl-3
+
+/*********************************************
+ *
+ * WINERY
+ *
+ *********************************************/
+
+.winery__text
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+.winery__text--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.winery__title
+  
+  /**** typography ****/
+  +head-6
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.winery__title:first-letter
+  +emph-4
+
+.winery__text
+  p
+
+    /**** typography ****/
+    +txt-3
+
+    /**** foreground ****/
+    color: $COLOR-QUATERNARY
+
+    /**** spacers ****/
+    margin-bottom: 1.5rem
+
+.winery__text strong
+  +emph-3
+
+.winery__text em
+  +emph-2
+
+/*********************************************
+ *
+ * PRODUCTS
+ *
+ *********************************************/
+
+.products__text
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+.products__text--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.products__title
+  
+  /**** typography ****/
+  +head-6
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.products__title:first-letter
+  +emph-4
+
+.products__text p
+
+  /**** typography ****/
+  +txt-3
+
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.products__text strong
+  +emph-3
+
+.products__text em
+  +emph-2
+
+.products__list
+
+  +at-breakpoint(lap)
+    overflow: hidden
+
+/*********************************************
+ *
+ * PRODUCT
+ *
+ *********************************************/
+
+.product
+
+  //+at-breakpoint(palm)
+    text-align: center
+
+  //+at-breakpoint(lap)
+    text-align: left
+
+  +at-breakpoint(desk)
+    +column
+    +equal-height
+
+.product__body, .product__image
+
+  padding: 3rem 1.5rem
+
+.product__body
+  +flag
+
+.product__image
+
+  +at-breakpoint(lap)
+    +flag__mast
+
+.product__info
+
+  padding: 0 1.5rem
+
+  +at-breakpoint(palm)
+    text-align: center
+
+  +at-breakpoint(lap)
+    +flag__banner
+    text-align: left
+
+.quantum-blend
+
+  background: #F4F4F4 url('../images/textures/light_background.png')
+
+.quantum-syrah
+
+  background: #EFEFEF url('../images/textures/light_background.png')
+
+
+.bag-in-box
+
+  background: #E5E5E5 url('../images/textures/light_background.png')
+
+.olive-oil
+ 
+  background: #DBDBDB url('../images/textures/light_background.png')
+
+
+.product__image
+  +at-breakpoint(palm)
+    text-align: center
+
+.product__image img
+  height: px-to-em(210px)
+
+.product__name
+  
+  /**** typography ****/
+  +inl-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product__year
+  
+  /**** typography ****/
+  +inl-5
+  
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+
+.product__ingredients
+  
+  /**** typography ****/
+  +inl-2
+
+  /**** foreground ****/
+  color: $vivid-burgundy
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product__type
+  
+  /**** typography ****/
+  +inl-3
+
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product__tasting_notes
+  text-align: left
+
+/*********************************************
+ *
+ * FEATURES
+ *
+ *********************************************/
+
+.features
+
+  padding: 0.5rem
+  padding-left: 0
+  //+at-breakpoint(lap)
+  +column(50%)
+
+.features__item:before
+  content: '\e618'
+  font-family: icons
+  display: inline-block
+  margin-left: -1.2em //same as padding-left set on li
+  width: 1.2em //same as padding-left set on li
+  color: $apple-green
+
+.features__title
+  +inl-8
+
+.features__item
+  +inl-7
+
+
+/*********************************************
+ *
+ * LOCATION
+ *
+ *********************************************/
+
+.location
+  padding: 3rem 1.5rem
+
+iframe
+
+  display: block
+  border: 1px solid grey
+  margin: 0 auto
+
+  +at-breakpoint(palm)
+    width: px-to-em(231px)
+    height: px-to-em(231px)
+
+  +at-breakpoint(lap)
+    width: px-to-em(420px)
+    height: px-to-em(420px)
+
 
 

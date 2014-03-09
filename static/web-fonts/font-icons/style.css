@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icons';
-	src:url('icons.eot?-tctzgn');
-	src:url('icons.eot?#iefix-tctzgn') format('embedded-opentype'),
-		url('icons.woff?-tctzgn') format('woff'),
-		url('icons.ttf?-tctzgn') format('truetype'),
-		url('icons.svg?-tctzgn#icons') format('svg');
+	src:url('fonts/icons.eot?-31cqqy');
+	src:url('fonts/icons.eot?#iefix-31cqqy') format('embedded-opentype'),
+		url('fonts/icons.woff?-31cqqy') format('woff'),
+		url('fonts/icons.ttf?-31cqqy') format('truetype'),
+		url('fonts/icons.svg?-31cqqy#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -35,6 +35,63 @@
 .icon-mail4:before {
 	content: "\e763";
 }
+.icon-home2:before {
+	content: "\e603";
+}
+.icon-droplet:before {
+	content: "\e610";
+}
+.icon-checkmark:before {
+	content: "\e618";
+}
 .icon-leaf:before {
+	content: "\e619";
+}
+.icon-checkmark-circle:before {
+	content: "\e620";
+}
+.icon-file-pdf:before {
+	content: "\e621";
+}
+.icon-leaf2:before {
 	content: "\e602";
+}
+.icon-pictures:before {
+	content: "\e614";
+}
+.icon-uniF7A3:before {
+	content: "\e604";
+}
+.icon-fork:before {
+	content: "\e605";
+}
+.icon-uniF541:before {
+	content: "\e606";
+}
+.icon-wine:before {
+	content: "\e607";
+}
+.icon-roadsign:before {
+	content: "\e608";
+}
+.icon-checkin:before {
+	content: "\e609";
+}
+.icon-uniF76A:before {
+	content: "\e611";
+}
+.icon-uniF691:before {
+	content: "\e612";
+}
+.icon-info:before {
+	content: "\e613";
+}
+.icon-uniF6F2:before {
+	content: "\e617";
+}
+.icon-certificate:before {
+	content: "\e615";
+}
+.icon-medal:before {
+	content: "\e616";
 }

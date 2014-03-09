@@ -4,9 +4,9 @@
 
 {% block page %}
   {% with page_title = page_title %}
-    {% include 'header/header.html' %}
+    {% include 'header/_theme/header--theme-tagline.html' %}
   {% endwith %}
-  {% include 'content/_themes/content--tpl-home.html' %} 
+  {% include 'content/_theme/content--theme-home.html' %} 
   {% include 'footer/footer.html' %} 
 {% endblock %}
 
