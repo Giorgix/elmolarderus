@@ -101,3 +101,9 @@ app.add_url_rule(
         'about', template_name='about/about.html')
 )
 app.add_url_rule('/contact/', view_func=Contact.as_view('contact'))
+
+app.add_url_rule(
+    '/zohoverify/verifyforzoho.html',
+    view_func=RenderTemplateView.as_view(
+        'zohoverify', template_name='zohoverify/verifyforzoho.html')
+)
