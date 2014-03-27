@@ -8,4 +8,4 @@ MAIL_SERVER = "mail.elmolarderus.com"
 MAIL_PORT = 465
 MAIL_USE_SSL = True
 MAIL_USERNAME = 'info@elmolarderus.com'
-MAIL_PASSWORD = 'rockyniebla'
+MAIL_PASSWORD = 'psw'
