@@ -4,8 +4,8 @@ RECAPTCHA_PUBLIC_KEY = '6LcfZfASAAAAAM4sGRF0w46NUqalCK-hLLatS7L6'
 RECAPTCHA_PRIVATE_KEY = '6LcfZfASAAAAANdB-nLJFOlj5jiYD0wrp8XzuO50'
 #RECAPTCHA_OPTIONS = {'theme': 'red'}
 
-MAIL_SERVER = "smtp.gmail.com"
+MAIL_SERVER = "mail.elmolarderus.com"
 MAIL_PORT = 465
 MAIL_USE_SSL = True
-MAIL_USERNAME = 'jackosinapsis@gmail.com'
-MAIL_PASSWORD = 'psw'
+MAIL_USERNAME = 'info@elmolarderus.com'
+MAIL_PASSWORD = 'rockyniebla'

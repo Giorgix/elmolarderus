@@ -51,9 +51,10 @@ class Contact(View):
             else:
 		msg = Message(form.subject.data,
 			      sender=(form.name.data, form.email.data),
-			      recipients=["jackosinapsis@gmail.com"])
+			      recipients=["info@elmolarderus.com"])
 		msg.html = """
-		<b>De:</b> %s <i>%s</i>
+		<p><b>De:</b> %s </p>
+        <p><b>Email:</b> %s</p>
 		<h4><b>Mensaje:</b></h4>
 		<p>%s</p>
 		""" % (form.name.data, form.email.data, form.message.data)
