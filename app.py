@@ -69,6 +69,11 @@ class Contact(View):
         elif request.method == 'GET':
             return render_template('contact/contact.html', form=form)
 # Routes
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('page_not_found.html'), 404
+
 app.add_url_rule(
     '/',
     view_func=RenderTemplateView.as_view(
